@@ -1,0 +1,19 @@
+-d C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\impl\gwsynthesis\rk3588_custom_tmds_dvi_720p60.vg
+-p GW5AT-60B-PBGA484A-1
+-pn GW5AT-LV60PG484AC1/I0
+-cst C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\rk3588_hdmi_link_test.cst
+-cfg C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\impl\pnr\device.cfg
+-sdc C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\rk3588_custom_dvi_link_test.sdc
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-place_option 0
+-route_option 0
+-clock_route_order 0
+-correct_hold 1
+-route_maxfan 23
+-global_freq 100.000
+-enable_dsrm 0

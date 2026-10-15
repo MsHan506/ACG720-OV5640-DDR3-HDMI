@@ -1,0 +1,6 @@
+open_project C:/chatgpt/fpga/b_perception/camera/ov5640_ddr3_hdmi_full/rk3588_hdmi_link_test.gprj
+set_option -verilog_std sysv2017
+set_option -top_module rk3588_hdmi_link_test_top
+set_option -output_base_name rk3588_hdmi_protocol_fixed_20261010
+set_option -use_sspi_as_gpio 1
+run all

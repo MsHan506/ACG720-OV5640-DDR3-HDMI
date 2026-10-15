@@ -1,0 +1,7393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>synthesis Report</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
+div#main_wrapper{ width: 100%; }
+div#content { margin-left: 350px; margin-right: 30px; }
+div#catalog_wrapper {position: fixed; top: 30px; width: 350px; float: left; }
+div#catalog ul { list-style-type: none; }
+div#catalog li { text-align: left; list-style-type:circle; color: #0084ff; margin-top: 3px; margin-bottom: 3px; }
+div#catalog a { display:inline-block; text-decoration: none; color: #0084ff; font-weight: bold; padding: 3px; }
+div#catalog a:visited { color: #0084ff; }
+div#catalog a:hover { color: #fff; background: #0084ff; }
+hr { margin-top: 30px; margin-bottom: 30px; }
+h1, h3 { text-align: center; }
+h1 {margin-top: 50px; }
+table, th, td { border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { padding: 5px 5px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table.summary_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.detail_table td.label { min-width: 100px; width: 8%;}
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="catalog_wrapper">
+<div id="catalog">
+<ul>
+<li><a href="#about" style=" font-size: 16px;">Synthesis Messages</a></li>
+<li><a href="#summary" style=" font-size: 16px;">Synthesis Details</a></li>
+<li><a href="#resource" style=" font-size: 16px;">Resource</a>
+<ul>
+<li><a href="#usage" style=" font-size: 14px;">Resource Usage Summary</a></li>
+<li><a href="#utilization" style=" font-size: 14px;">Resource Utilization Summary</a></li>
+</ul>
+</li>
+<li><a href="#timing" style=" font-size: 16px;">Timing</a>
+<ul>
+<li><a href="#clock" style=" font-size: 14px;">Clock Summary</a></li>
+<li><a href="#performance" style=" font-size: 14px;">Max Frequency Summary</a></li>
+<li><a href="#detail timing" style=" font-size: 14px;">Detail Timing Paths Informations</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- catalog -->
+</div><!-- catalog_wrapper -->
+<div id="content">
+<h1><a name="about">Synthesis Messages</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Report Title</td>
+<td>GowinSynthesis Report</td>
+</tr>
+<tr>
+<td class="label">Design File</td>
+<td>C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\gowin_official_dvi_acg720\vendor\dvi_tx\dvi_tx.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\gowin_official_dvi_acg720\src\gw5at_dvi_pll.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\gowin_official_dvi_acg720\vendor\testpattern.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\gowin_official_dvi_acg720\src\gowin_official_video_top_acg720.v<br>
+</td>
+</tr>
+<tr>
+<td class="label">GowinSynthesis Constraints File</td>
+<td>---</td>
+</tr>
+<tr>
+<td class="label">Tool Version</td>
+<td>V1.9.12.03 (64-bit)</td>
+</tr>
+<tr>
+<td class="label">Part Number</td>
+<td>GW5AT-LV60PG484AC1/I0</td>
+</tr>
+<tr>
+<td class="label">Device</td>
+<td>GW5AT-60</td>
+</tr>
+<tr>
+<td class="label">Device Version</td>
+<td>B</td>
+</tr>
+<tr>
+<td class="label">Created Time</td>
+<td>Wed Oct 14 11:51:57 2026
+</td>
+</tr>
+<tr>
+<td class="label">Legal Announcement</td>
+<td>Copyright (C)2014-2026 Gowin Semiconductor Corporation. ALL rights reserved.</td>
+</tr>
+</table>
+<h1><a name="summary">Synthesis Details</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Top Level Module</td>
+<td>gowin_official_video_top_acg720</td>
+</tr>
+<tr>
+<td class="label">Synthesis Process</td>
+<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.125s, Elapsed time = 0h 0m 0.15s, Peak memory usage = 118.648MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.021s, Peak memory usage = 118.648MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.015s, Peak memory usage = 118.648MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.032s, Peak memory usage = 118.648MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.011s, Peak memory usage = 118.648MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.001s, Peak memory usage = 118.648MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.002s, Peak memory usage = 118.648MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.003s, Peak memory usage = 118.648MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.025s, Peak memory usage = 118.648MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.008s, Peak memory usage = 118.648MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.003s, Peak memory usage = 118.648MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 0.578s, Elapsed time = 0h 0m 0.603s, Peak memory usage = 142.539MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.093s, Elapsed time = 0h 0m 0.094s, Peak memory usage = 142.539MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.028s, Peak memory usage = 142.539MB<br/></td>
+</tr>
+<tr>
+<td class="label">Total Time and Memory Usage</td>
+<td>CPU time = 0h 0m 0.965s, Elapsed time = 0h 0m 0.996s, Peak memory usage = 142.539MB</td>
+</tr>
+</table>
+<h1><a name="resource">Resource</a></h1>
+<h2><a name="usage">Resource Usage Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Resource</b></td>
+<td><b>Usage</b></td>
+</tr>
+<tr>
+<td class="label"><b>I/O Port </b></td>
+<td>14</td>
+</tr>
+<tr>
+<td class="label"><b>I/O Buf </b></td>
+<td>10</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIBUF</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOBUF</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspTLVDS_OBUF</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label"><b>Register </b></td>
+<td>280</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFPE</td>
+<td>13</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFCE</td>
+<td>267</td>
+</tr>
+<tr>
+<td class="label"><b>LUT </b></td>
+<td>569</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT2</td>
+<td>100</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT3</td>
+<td>122</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT4</td>
+<td>347</td>
+</tr>
+<tr>
+<td class="label"><b>ALU </b></td>
+<td>78</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspALU</td>
+<td>78</td>
+</tr>
+<tr>
+<td class="label"><b>INV </b></td>
+<td>6</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspINV</td>
+<td>6</td>
+</tr>
+<tr>
+<td class="label"><b>IOLOGIC </b></td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOSER10</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label"><b>CLOCK </b></td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspCLKDIV</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspPLLA</td>
+<td>1</td>
+</tr>
+</table>
+<h2><a name="utilization">Resource Utilization Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Resource</b></td>
+<td><b>Usage</b></td>
+<td><b>Utilization</b></td>
+</tr>
+<tr>
+<td class="label">Logic</td>
+<td>653(575 LUT, 78 ALU) / 59904</td>
+<td>2%</td>
+</tr>
+<tr>
+<td class="label">Register</td>
+<td>280 / 60780</td>
+<td><1%</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp--Register as Latch</td>
+<td>0 / 60780</td>
+<td>0%</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp--Register as FF</td>
+<td>280 / 60780</td>
+<td><1%</td>
+</tr>
+<tr>
+<td class="label">BSRAM</td>
+<td>0 / 118</td>
+<td>0%</td>
+</tr>
+</table>
+<h1><a name="timing">Timing</a></h1>
+<h2><a name="clock">Clock Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>NO.</th>
+<th>Clock Name</th>
+<th>Type</th>
+<th>Period</th>
+<th>Frequency(MHz)</th>
+<th>Rise</th>
+<th>Fall</th>
+<th>Source</th>
+<th>Master</th>
+<th>Object</th>
+</tr>
+<tr>
+<td>1</td>
+<td>I_clk</td>
+<td>Base</td>
+<td>20.000</td>
+<td>50.000</td>
+<td>0.000</td>
+<td>10.000</td>
+<td> </td>
+<td> </td>
+<td>I_clk_ibuf/I </td>
+</tr>
+<tr>
+<td>2</td>
+<td>u_tmds_pll/pll_inst/CLKOUT0.default_gen_clk</td>
+<td>Generated</td>
+<td>2.694</td>
+<td>371.250</td>
+<td>0.000</td>
+<td>1.347</td>
+<td>I_clk_ibuf/I</td>
+<td>I_clk</td>
+<td>u_tmds_pll/pll_inst/CLKOUT0 </td>
+</tr>
+<tr>
+<td>3</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>13.468</td>
+<td>74.250</td>
+<td>0.000</td>
+<td>6.734</td>
+<td>u_tmds_pll/pll_inst/CLKOUT0</td>
+<td>u_tmds_pll/pll_inst/CLKOUT0.default_gen_clk</td>
+<td>u_clkdiv/CLKOUT </td>
+</tr>
+</table>
+<h2><a name="performance">Max Frequency Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>NO.</th>
+<th>Clock Name</th>
+<th>Constraint</th>
+<th>Actual Fmax</th>
+<th>Logic Level</th>
+<th>Entity</th>
+</tr>
+<tr>
+<td>1</td>
+<td>I_clk</td>
+<td>50.000(MHz)</td>
+<td>251.596(MHz)</td>
+<td>5</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>2</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+<td>74.250(MHz)</td>
+<td>122.758(MHz)</td>
+<td>10</td>
+<td>TOP</td>
+</tr>
+</table>
+<h2><a name="detail timing">Detail Timing Paths Information</a></h2>
+<h3>Path&nbsp1</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>5.322</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>8.752</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_4_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>7</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s20/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s20/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s18/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s18/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_3_s12/I0</td>
+</tr>
+<tr>
+<td>3.432</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_3_s12/F</td>
+</tr>
+<tr>
+<td>3.770</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s1/I2</td>
+</tr>
+<tr>
+<td>4.185</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s1/F</td>
+</tr>
+<tr>
+<td>4.522</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_2_s16/I0</td>
+</tr>
+<tr>
+<td>4.996</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_2_s16/F</td>
+</tr>
+<tr>
+<td>5.334</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n237_s5/I1</td>
+</tr>
+<tr>
+<td>5.991</td>
+<td>0.657</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n237_s5/SUM</td>
+</tr>
+<tr>
+<td>6.328</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n603_s6/I0</td>
+</tr>
+<tr>
+<td>6.802</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n603_s6/F</td>
+</tr>
+<tr>
+<td>7.139</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n603_s3/I0</td>
+</tr>
+<tr>
+<td>7.613</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n603_s3/F</td>
+</tr>
+<tr>
+<td>7.950</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n603_s1/I1</td>
+</tr>
+<tr>
+<td>8.415</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n603_s1/F</td>
+</tr>
+<tr>
+<td>8.753</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_4_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_4_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_4_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>10</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 4.370, 54.019%; route: 3.375, 41.725%; tC2Q: 0.344, 4.256%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp2</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>6.064</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>8.010</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_4_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>9</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s20/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s20/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s18/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s18/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s15/I2</td>
+</tr>
+<tr>
+<td>3.374</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s15/F</td>
+</tr>
+<tr>
+<td>3.711</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s14/I0</td>
+</tr>
+<tr>
+<td>4.185</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s14/F</td>
+</tr>
+<tr>
+<td>4.523</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n238_s5/I1</td>
+</tr>
+<tr>
+<td>5.029</td>
+<td>0.506</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n238_s5/COUT</td>
+</tr>
+<tr>
+<td>5.029</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n237_s5/CIN</td>
+</tr>
+<tr>
+<td>5.248</td>
+<td>0.219</td>
+<td>tINS</td>
+<td>FR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n237_s5/SUM</td>
+</tr>
+<tr>
+<td>5.586</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n603_s6/I0</td>
+</tr>
+<tr>
+<td>6.059</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n603_s6/F</td>
+</tr>
+<tr>
+<td>6.397</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n603_s3/I0</td>
+</tr>
+<tr>
+<td>6.870</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n603_s3/F</td>
+</tr>
+<tr>
+<td>7.208</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n603_s1/I1</td>
+</tr>
+<tr>
+<td>7.673</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n603_s1/F</td>
+</tr>
+<tr>
+<td>8.010</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_4_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_4_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_4_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>10</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.964, 53.966%; route: 3.037, 41.348%; tC2Q: 0.344, 4.686%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp3</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>6.084</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>7.991</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/din_d_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_4_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/din_d_1_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>7</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/din_d_1_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n630_s4/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n630_s4/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_1_s17/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_1_s17/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s17/I0</td>
+</tr>
+<tr>
+<td>3.432</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s17/F</td>
+</tr>
+<tr>
+<td>3.770</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s15/I1</td>
+</tr>
+<tr>
+<td>4.234</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s15/F</td>
+</tr>
+<tr>
+<td>4.572</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n237_s5/I1</td>
+</tr>
+<tr>
+<td>5.229</td>
+<td>0.657</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n237_s5/SUM</td>
+</tr>
+<tr>
+<td>5.566</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n603_s6/I0</td>
+</tr>
+<tr>
+<td>6.040</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n603_s6/F</td>
+</tr>
+<tr>
+<td>6.378</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n603_s3/I0</td>
+</tr>
+<tr>
+<td>6.851</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n603_s3/F</td>
+</tr>
+<tr>
+<td>7.189</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n603_s1/I1</td>
+</tr>
+<tr>
+<td>7.653</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n603_s1/F</td>
+</tr>
+<tr>
+<td>7.991</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_4_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_4_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_4_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>9</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.945, 53.846%; route: 3.037, 41.456%; tC2Q: 0.344, 4.698%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp4</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>6.124</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>7.950</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_3_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>7</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s20/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s20/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s18/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s18/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_3_s12/I0</td>
+</tr>
+<tr>
+<td>3.432</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_3_s12/F</td>
+</tr>
+<tr>
+<td>3.770</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s1/I2</td>
+</tr>
+<tr>
+<td>4.185</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s1/F</td>
+</tr>
+<tr>
+<td>4.522</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_2_s16/I0</td>
+</tr>
+<tr>
+<td>4.996</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_2_s16/F</td>
+</tr>
+<tr>
+<td>5.334</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n365_s3/I1</td>
+</tr>
+<tr>
+<td>5.991</td>
+<td>0.657</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n365_s3/SUM</td>
+</tr>
+<tr>
+<td>6.328</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n604_s2/I0</td>
+</tr>
+<tr>
+<td>6.802</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n604_s2/F</td>
+</tr>
+<tr>
+<td>7.139</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n604_s1/I0</td>
+</tr>
+<tr>
+<td>7.613</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n604_s1/F</td>
+</tr>
+<tr>
+<td>7.950</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_3_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_3_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_3_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>9</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.905, 53.590%; route: 3.037, 41.686%; tC2Q: 0.344, 4.724%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp5</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>6.192</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>7.883</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_3_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>9</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s20/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s20/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s18/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s18/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s15/I2</td>
+</tr>
+<tr>
+<td>3.374</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s15/F</td>
+</tr>
+<tr>
+<td>3.711</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s14/I0</td>
+</tr>
+<tr>
+<td>4.185</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s14/F</td>
+</tr>
+<tr>
+<td>4.523</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n238_s5/I1</td>
+</tr>
+<tr>
+<td>5.180</td>
+<td>0.657</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n238_s5/SUM</td>
+</tr>
+<tr>
+<td>5.517</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n604_s4/I0</td>
+</tr>
+<tr>
+<td>5.991</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n604_s4/F</td>
+</tr>
+<tr>
+<td>6.328</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n604_s3/I2</td>
+</tr>
+<tr>
+<td>6.743</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n604_s3/F</td>
+</tr>
+<tr>
+<td>7.081</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n604_s1/I1</td>
+</tr>
+<tr>
+<td>7.545</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n604_s1/F</td>
+</tr>
+<tr>
+<td>7.883</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_3_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_3_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_3_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>9</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.837, 53.155%; route: 3.037, 42.076%; tC2Q: 0.344, 4.769%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp6</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>6.608</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>7.467</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/din_d_4_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_3_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/din_d_4_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>4</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/din_d_4_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n683_s4/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n683_s4/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n683_s2/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n683_s2/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_1_s16/I3</td>
+</tr>
+<tr>
+<td>3.195</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_1_s16/F</td>
+</tr>
+<tr>
+<td>3.532</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_1_s20/I3</td>
+</tr>
+<tr>
+<td>3.769</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_1_s20/F</td>
+</tr>
+<tr>
+<td>4.106</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n238_s5/I1</td>
+</tr>
+<tr>
+<td>4.763</td>
+<td>0.657</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n238_s5/SUM</td>
+</tr>
+<tr>
+<td>5.101</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n604_s4/I0</td>
+</tr>
+<tr>
+<td>5.574</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n604_s4/F</td>
+</tr>
+<tr>
+<td>5.912</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n604_s3/I2</td>
+</tr>
+<tr>
+<td>6.327</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n604_s3/F</td>
+</tr>
+<tr>
+<td>6.665</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n604_s1/I1</td>
+</tr>
+<tr>
+<td>7.129</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n604_s1/F</td>
+</tr>
+<tr>
+<td>7.467</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_3_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_3_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_3_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>9</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.421, 50.290%; route: 3.037, 44.650%; tC2Q: 0.344, 5.060%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp7</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>6.618</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>7.456</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_0_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>7</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s20/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s20/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s18/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s18/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_3_s12/I0</td>
+</tr>
+<tr>
+<td>3.432</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_3_s12/F</td>
+</tr>
+<tr>
+<td>3.770</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s2/I0</td>
+</tr>
+<tr>
+<td>4.243</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s2/F</td>
+</tr>
+<tr>
+<td>4.581</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n653_s0/I1</td>
+</tr>
+<tr>
+<td>5.046</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>8</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n653_s0/F</td>
+</tr>
+<tr>
+<td>5.383</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n679_s1/I1</td>
+</tr>
+<tr>
+<td>5.848</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n679_s1/F</td>
+</tr>
+<tr>
+<td>6.185</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n679_s0/I0</td>
+</tr>
+<tr>
+<td>6.308</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n679_s0/O</td>
+</tr>
+<tr>
+<td>6.645</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n689_s0/I0</td>
+</tr>
+<tr>
+<td>7.119</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n689_s0/F</td>
+</tr>
+<tr>
+<td>7.457</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_0_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_0_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_0_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.411, 50.215%; route: 3.037, 44.717%; tC2Q: 0.344, 5.068%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp8</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>6.744</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>7.330</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_0_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>9</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s20/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s20/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s18/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s18/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s15/I2</td>
+</tr>
+<tr>
+<td>3.374</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s15/F</td>
+</tr>
+<tr>
+<td>3.711</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_2_s15/I2</td>
+</tr>
+<tr>
+<td>4.126</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_2_s15/F</td>
+</tr>
+<tr>
+<td>4.464</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n653_s0/I1</td>
+</tr>
+<tr>
+<td>4.929</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>7</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n653_s0/F</td>
+</tr>
+<tr>
+<td>5.266</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n679_s1/I1</td>
+</tr>
+<tr>
+<td>5.731</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n679_s1/F</td>
+</tr>
+<tr>
+<td>6.068</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n679_s0/I0</td>
+</tr>
+<tr>
+<td>6.191</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n679_s0/O</td>
+</tr>
+<tr>
+<td>6.528</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n689_s0/I1</td>
+</tr>
+<tr>
+<td>6.993</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n689_s0/F</td>
+</tr>
+<tr>
+<td>7.330</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_0_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_0_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_0_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.285, 49.274%; route: 3.037, 45.562%; tC2Q: 0.344, 5.164%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp9</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>6.837</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>7.237</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/din_d_4_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/dout_0_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/din_d_4_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>4</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/din_d_4_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n683_s4/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n683_s4/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s16/I0</td>
+</tr>
+<tr>
+<td>2.630</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s16/F</td>
+</tr>
+<tr>
+<td>2.968</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_1_s15/I0</td>
+</tr>
+<tr>
+<td>3.441</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_1_s15/F</td>
+</tr>
+<tr>
+<td>3.779</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n630_s1/I3</td>
+</tr>
+<tr>
+<td>4.015</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n630_s1/F</td>
+</tr>
+<tr>
+<td>4.353</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n653_s0/I0</td>
+</tr>
+<tr>
+<td>4.826</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>8</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n653_s0/F</td>
+</tr>
+<tr>
+<td>5.164</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n679_s1/I1</td>
+</tr>
+<tr>
+<td>5.628</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n679_s1/F</td>
+</tr>
+<tr>
+<td>5.966</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n679_s0/I0</td>
+</tr>
+<tr>
+<td>6.088</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n679_s0/O</td>
+</tr>
+<tr>
+<td>6.426</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n689_s0/I0</td>
+</tr>
+<tr>
+<td>6.900</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n689_s0/F</td>
+</tr>
+<tr>
+<td>7.237</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/dout_0_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/dout_0_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/dout_0_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.192, 48.554%; route: 3.037, 46.209%; tC2Q: 0.344, 5.237%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp10</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>6.935</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>7.139</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_2_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>9</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s20/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s20/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s18/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s18/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s15/I2</td>
+</tr>
+<tr>
+<td>3.374</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s15/F</td>
+</tr>
+<tr>
+<td>3.711</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s14/I0</td>
+</tr>
+<tr>
+<td>4.185</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s14/F</td>
+</tr>
+<tr>
+<td>4.523</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n366_s3/I1</td>
+</tr>
+<tr>
+<td>5.180</td>
+<td>0.657</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n366_s3/SUM</td>
+</tr>
+<tr>
+<td>5.517</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n605_s2/I0</td>
+</tr>
+<tr>
+<td>5.991</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n605_s2/F</td>
+</tr>
+<tr>
+<td>6.328</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n605_s1/I0</td>
+</tr>
+<tr>
+<td>6.802</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n605_s1/F</td>
+</tr>
+<tr>
+<td>7.139</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_2_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_2_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_2_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.431, 52.988%; route: 2.700, 41.696%; tC2Q: 0.344, 5.316%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp11</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>7.069</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>7.005</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_9_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>9</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s20/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s20/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s18/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s18/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_2_s16/I0</td>
+</tr>
+<tr>
+<td>3.432</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_2_s16/F</td>
+</tr>
+<tr>
+<td>3.770</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s1/I1</td>
+</tr>
+<tr>
+<td>4.234</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s1/F</td>
+</tr>
+<tr>
+<td>4.572</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s0/I0</td>
+</tr>
+<tr>
+<td>5.046</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>7</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s0/F</td>
+</tr>
+<tr>
+<td>5.383</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n680_s1/I0</td>
+</tr>
+<tr>
+<td>5.857</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n680_s1/F</td>
+</tr>
+<tr>
+<td>6.194</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n680_s0/I0</td>
+</tr>
+<tr>
+<td>6.668</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n680_s0/F</td>
+</tr>
+<tr>
+<td>7.005</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_9_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_9_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_9_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.297, 51.996%; route: 2.700, 42.576%; tC2Q: 0.344, 5.428%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp12</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>7.078</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>6.996</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_2_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>9</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s20/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s20/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s18/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s18/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_2_s16/I0</td>
+</tr>
+<tr>
+<td>3.432</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_2_s16/F</td>
+</tr>
+<tr>
+<td>3.770</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s1/I1</td>
+</tr>
+<tr>
+<td>4.234</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s1/F</td>
+</tr>
+<tr>
+<td>4.572</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s0/I0</td>
+</tr>
+<tr>
+<td>5.046</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>7</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s0/F</td>
+</tr>
+<tr>
+<td>5.383</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n680_s1/I0</td>
+</tr>
+<tr>
+<td>5.857</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n680_s1/F</td>
+</tr>
+<tr>
+<td>6.194</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n687_s1/I1</td>
+</tr>
+<tr>
+<td>6.659</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n687_s1/F</td>
+</tr>
+<tr>
+<td>6.996</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_2_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_2_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_2_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.288, 51.928%; route: 2.700, 42.636%; tC2Q: 0.344, 5.436%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp13</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>7.078</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>6.996</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_3_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>9</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s20/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s20/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s18/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s18/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_2_s16/I0</td>
+</tr>
+<tr>
+<td>3.432</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_2_s16/F</td>
+</tr>
+<tr>
+<td>3.770</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s1/I1</td>
+</tr>
+<tr>
+<td>4.234</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s1/F</td>
+</tr>
+<tr>
+<td>4.572</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s0/I0</td>
+</tr>
+<tr>
+<td>5.046</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>7</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s0/F</td>
+</tr>
+<tr>
+<td>5.383</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n680_s1/I0</td>
+</tr>
+<tr>
+<td>5.857</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n680_s1/F</td>
+</tr>
+<tr>
+<td>6.194</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n686_s0/I1</td>
+</tr>
+<tr>
+<td>6.659</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n686_s0/F</td>
+</tr>
+<tr>
+<td>6.996</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_3_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_3_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_3_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.288, 51.928%; route: 2.700, 42.636%; tC2Q: 0.344, 5.436%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp14</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>7.078</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>6.996</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_4_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>9</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s20/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s20/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s18/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s18/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_2_s16/I0</td>
+</tr>
+<tr>
+<td>3.432</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_2_s16/F</td>
+</tr>
+<tr>
+<td>3.770</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s1/I1</td>
+</tr>
+<tr>
+<td>4.234</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s1/F</td>
+</tr>
+<tr>
+<td>4.572</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s0/I0</td>
+</tr>
+<tr>
+<td>5.046</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>7</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s0/F</td>
+</tr>
+<tr>
+<td>5.383</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n680_s1/I0</td>
+</tr>
+<tr>
+<td>5.857</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n680_s1/F</td>
+</tr>
+<tr>
+<td>6.194</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n685_s1/I1</td>
+</tr>
+<tr>
+<td>6.659</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n685_s1/F</td>
+</tr>
+<tr>
+<td>6.996</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_4_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_4_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_4_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.288, 51.928%; route: 2.700, 42.636%; tC2Q: 0.344, 5.436%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp15</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>7.078</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>6.996</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_5_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>9</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s20/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s20/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s18/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s18/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_2_s16/I0</td>
+</tr>
+<tr>
+<td>3.432</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_2_s16/F</td>
+</tr>
+<tr>
+<td>3.770</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s1/I1</td>
+</tr>
+<tr>
+<td>4.234</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s1/F</td>
+</tr>
+<tr>
+<td>4.572</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s0/I0</td>
+</tr>
+<tr>
+<td>5.046</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>7</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s0/F</td>
+</tr>
+<tr>
+<td>5.383</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n680_s1/I0</td>
+</tr>
+<tr>
+<td>5.857</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n680_s1/F</td>
+</tr>
+<tr>
+<td>6.194</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n684_s0/I1</td>
+</tr>
+<tr>
+<td>6.659</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n684_s0/F</td>
+</tr>
+<tr>
+<td>6.996</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_5_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_5_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_5_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.288, 51.928%; route: 2.700, 42.636%; tC2Q: 0.344, 5.436%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp16</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>7.078</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>6.996</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_7_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>9</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/din_d_1_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s20/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s20/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s18/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_1_s18/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_2_s16/I0</td>
+</tr>
+<tr>
+<td>3.432</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/cnt_one_9bit_2_s16/F</td>
+</tr>
+<tr>
+<td>3.770</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s1/I1</td>
+</tr>
+<tr>
+<td>4.234</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s1/F</td>
+</tr>
+<tr>
+<td>4.572</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s0/I0</td>
+</tr>
+<tr>
+<td>5.046</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>7</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n630_s0/F</td>
+</tr>
+<tr>
+<td>5.383</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n682_s1/I0</td>
+</tr>
+<tr>
+<td>5.857</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n682_s1/F</td>
+</tr>
+<tr>
+<td>6.194</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n682_s0/I1</td>
+</tr>
+<tr>
+<td>6.659</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/n682_s0/F</td>
+</tr>
+<tr>
+<td>6.996</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_7_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_7_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/dout_7_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.288, 51.928%; route: 2.700, 42.636%; tC2Q: 0.344, 5.436%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp17</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>7.078</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>6.996</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_2_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>7</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s20/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s20/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s18/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s18/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_3_s12/I0</td>
+</tr>
+<tr>
+<td>3.432</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_3_s12/F</td>
+</tr>
+<tr>
+<td>3.770</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s2/I0</td>
+</tr>
+<tr>
+<td>4.243</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s2/F</td>
+</tr>
+<tr>
+<td>4.581</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s0/I1</td>
+</tr>
+<tr>
+<td>5.046</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>8</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s0/F</td>
+</tr>
+<tr>
+<td>5.383</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n683_s3/I0</td>
+</tr>
+<tr>
+<td>5.857</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n683_s3/F</td>
+</tr>
+<tr>
+<td>6.194</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n687_s1/I1</td>
+</tr>
+<tr>
+<td>6.659</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n687_s1/F</td>
+</tr>
+<tr>
+<td>6.996</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_2_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_2_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_2_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.288, 51.928%; route: 2.700, 42.636%; tC2Q: 0.344, 5.436%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp18</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>7.078</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>6.996</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_3_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>7</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s20/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s20/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s18/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s18/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_3_s12/I0</td>
+</tr>
+<tr>
+<td>3.432</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_3_s12/F</td>
+</tr>
+<tr>
+<td>3.770</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s2/I0</td>
+</tr>
+<tr>
+<td>4.243</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s2/F</td>
+</tr>
+<tr>
+<td>4.581</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s0/I1</td>
+</tr>
+<tr>
+<td>5.046</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>8</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s0/F</td>
+</tr>
+<tr>
+<td>5.383</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n683_s3/I0</td>
+</tr>
+<tr>
+<td>5.857</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n683_s3/F</td>
+</tr>
+<tr>
+<td>6.194</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n686_s0/I1</td>
+</tr>
+<tr>
+<td>6.659</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n686_s0/F</td>
+</tr>
+<tr>
+<td>6.996</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_3_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_3_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_3_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.288, 51.928%; route: 2.700, 42.636%; tC2Q: 0.344, 5.436%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp19</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>7.078</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>6.996</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_4_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>7</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s20/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s20/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s18/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s18/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_3_s12/I0</td>
+</tr>
+<tr>
+<td>3.432</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_3_s12/F</td>
+</tr>
+<tr>
+<td>3.770</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s2/I0</td>
+</tr>
+<tr>
+<td>4.243</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s2/F</td>
+</tr>
+<tr>
+<td>4.581</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s0/I1</td>
+</tr>
+<tr>
+<td>5.046</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>8</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s0/F</td>
+</tr>
+<tr>
+<td>5.383</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n683_s3/I0</td>
+</tr>
+<tr>
+<td>5.857</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n683_s3/F</td>
+</tr>
+<tr>
+<td>6.194</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n685_s1/I1</td>
+</tr>
+<tr>
+<td>6.659</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n685_s1/F</td>
+</tr>
+<tr>
+<td>6.996</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_4_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_4_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_4_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.288, 51.928%; route: 2.700, 42.636%; tC2Q: 0.344, 5.436%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp20</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>7.078</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>6.996</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_5_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>7</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s20/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s20/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s18/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s18/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_3_s12/I0</td>
+</tr>
+<tr>
+<td>3.432</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_3_s12/F</td>
+</tr>
+<tr>
+<td>3.770</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s2/I0</td>
+</tr>
+<tr>
+<td>4.243</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s2/F</td>
+</tr>
+<tr>
+<td>4.581</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s0/I1</td>
+</tr>
+<tr>
+<td>5.046</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>8</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s0/F</td>
+</tr>
+<tr>
+<td>5.383</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n683_s3/I0</td>
+</tr>
+<tr>
+<td>5.857</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n683_s3/F</td>
+</tr>
+<tr>
+<td>6.194</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n684_s0/I1</td>
+</tr>
+<tr>
+<td>6.659</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n684_s0/F</td>
+</tr>
+<tr>
+<td>6.996</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_5_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_5_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_5_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.288, 51.928%; route: 2.700, 42.636%; tC2Q: 0.344, 5.436%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp21</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>7.078</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>6.996</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_7_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>7</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/din_d_0_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s20/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s20/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s18/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_1_s18/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_3_s12/I0</td>
+</tr>
+<tr>
+<td>3.432</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/cnt_one_9bit_3_s12/F</td>
+</tr>
+<tr>
+<td>3.770</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s2/I0</td>
+</tr>
+<tr>
+<td>4.243</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s2/F</td>
+</tr>
+<tr>
+<td>4.581</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s0/I1</td>
+</tr>
+<tr>
+<td>5.046</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>8</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n630_s0/F</td>
+</tr>
+<tr>
+<td>5.383</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n682_s1/I0</td>
+</tr>
+<tr>
+<td>5.857</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n682_s1/F</td>
+</tr>
+<tr>
+<td>6.194</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n682_s0/I1</td>
+</tr>
+<tr>
+<td>6.659</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/n682_s0/F</td>
+</tr>
+<tr>
+<td>6.996</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_7_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_7_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/dout_7_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.288, 51.928%; route: 2.700, 42.636%; tC2Q: 0.344, 5.436%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp22</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>7.078</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>6.996</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/din_d_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/dout_2_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/din_d_1_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>7</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/din_d_1_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n630_s4/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n630_s4/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_1_s17/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_1_s17/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s17/I0</td>
+</tr>
+<tr>
+<td>3.432</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s17/F</td>
+</tr>
+<tr>
+<td>3.770</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s15/I1</td>
+</tr>
+<tr>
+<td>4.234</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s15/F</td>
+</tr>
+<tr>
+<td>4.572</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n630_s0/I0</td>
+</tr>
+<tr>
+<td>5.046</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>8</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n630_s0/F</td>
+</tr>
+<tr>
+<td>5.383</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n683_s3/I0</td>
+</tr>
+<tr>
+<td>5.857</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n683_s3/F</td>
+</tr>
+<tr>
+<td>6.194</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n687_s1/I1</td>
+</tr>
+<tr>
+<td>6.659</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n687_s1/F</td>
+</tr>
+<tr>
+<td>6.996</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/dout_2_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/dout_2_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/dout_2_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.288, 51.928%; route: 2.700, 42.636%; tC2Q: 0.344, 5.436%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp23</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>7.078</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>6.996</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/din_d_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/dout_3_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/din_d_1_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>7</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/din_d_1_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n630_s4/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n630_s4/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_1_s17/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_1_s17/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s17/I0</td>
+</tr>
+<tr>
+<td>3.432</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s17/F</td>
+</tr>
+<tr>
+<td>3.770</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s15/I1</td>
+</tr>
+<tr>
+<td>4.234</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s15/F</td>
+</tr>
+<tr>
+<td>4.572</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n630_s0/I0</td>
+</tr>
+<tr>
+<td>5.046</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>8</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n630_s0/F</td>
+</tr>
+<tr>
+<td>5.383</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n683_s3/I0</td>
+</tr>
+<tr>
+<td>5.857</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n683_s3/F</td>
+</tr>
+<tr>
+<td>6.194</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n686_s0/I1</td>
+</tr>
+<tr>
+<td>6.659</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n686_s0/F</td>
+</tr>
+<tr>
+<td>6.996</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/dout_3_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/dout_3_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/dout_3_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.288, 51.928%; route: 2.700, 42.636%; tC2Q: 0.344, 5.436%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp24</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>7.078</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>6.996</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/din_d_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/dout_4_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/din_d_1_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>7</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/din_d_1_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n630_s4/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n630_s4/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_1_s17/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_1_s17/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s17/I0</td>
+</tr>
+<tr>
+<td>3.432</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s17/F</td>
+</tr>
+<tr>
+<td>3.770</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s15/I1</td>
+</tr>
+<tr>
+<td>4.234</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s15/F</td>
+</tr>
+<tr>
+<td>4.572</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n630_s0/I0</td>
+</tr>
+<tr>
+<td>5.046</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>8</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n630_s0/F</td>
+</tr>
+<tr>
+<td>5.383</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n683_s3/I0</td>
+</tr>
+<tr>
+<td>5.857</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n683_s3/F</td>
+</tr>
+<tr>
+<td>6.194</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n685_s1/I1</td>
+</tr>
+<tr>
+<td>6.659</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n685_s1/F</td>
+</tr>
+<tr>
+<td>6.996</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/dout_4_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/dout_4_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/dout_4_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.288, 51.928%; route: 2.700, 42.636%; tC2Q: 0.344, 5.436%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp25</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>7.078</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>6.996</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>14.074</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/din_d_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/dout_5_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/din_d_1_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>7</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/din_d_1_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n630_s4/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n630_s4/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_1_s17/I1</td>
+</tr>
+<tr>
+<td>2.621</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_1_s17/F</td>
+</tr>
+<tr>
+<td>2.959</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s17/I0</td>
+</tr>
+<tr>
+<td>3.432</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s17/F</td>
+</tr>
+<tr>
+<td>3.770</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s15/I1</td>
+</tr>
+<tr>
+<td>4.234</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/cnt_one_9bit_2_s15/F</td>
+</tr>
+<tr>
+<td>4.572</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n630_s0/I0</td>
+</tr>
+<tr>
+<td>5.046</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>8</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n630_s0/F</td>
+</tr>
+<tr>
+<td>5.383</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n683_s3/I0</td>
+</tr>
+<tr>
+<td>5.857</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n683_s3/F</td>
+</tr>
+<tr>
+<td>6.194</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n684_s0/I1</td>
+</tr>
+<tr>
+<td>6.659</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/n684_s0/F</td>
+</tr>
+<tr>
+<td>6.996</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/dout_5_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.468</td>
+<td>13.468</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.468</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.794</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>258</td>
+<td>u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>14.132</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/dout_5_s0/CLK</td>
+</tr>
+<tr>
+<td>14.074</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/dout_5_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.468</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.288, 51.928%; route: 2.700, 42.636%; tC2Q: 0.344, 5.436%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>

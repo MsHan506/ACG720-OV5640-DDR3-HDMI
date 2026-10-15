@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="b_full_top" Register="59" Lut="271" T_Register="6435(59)" T_Alu="1422(0)" T_Lut="7877(271)" T_MULTALU27X18="6(0)" T_MULT27X36="2(0)" T_Bsram="17(0)">
+ <SubModule name="u_ir_decoder" Register="72" Lut="182" T_Register="72(72)" T_Lut="182(182)"/>
+ <SubModule name="u_remote_commands" Register="5" Lut="12" T_Register="5(5)" T_Lut="12(12)"/>
+ <SubModule name="u_ai_commands" Register="80" Alu="8" Lut="135" T_Register="130(80)" T_Alu="8(8)" T_Lut="226(135)">
+  <SubModule name="u_ai_uart_rx" Register="50" Lut="91" T_Register="50(50)" T_Lut="91(91)"/>
+ </SubModule>
+ <SubModule name="u_drive_latch" Register="26" Lut="47" T_Register="26(26)" T_Lut="47(47)"/>
+ <SubModule name="u_motion" Register="97" Lut="176" T_Register="97(97)" T_Lut="176(176)"/>
+ <SubModule name="u_route" Register="176" Alu="203" Lut="275" T_Register="176(176)" T_Alu="203(203)" T_Lut="275(275)"/>
+ <SubModule name="u_rpm_ramp" Register="85" Alu="128" Lut="756" T_Register="85(85)" T_Alu="128(128)" T_Lut="756(756)"/>
+ <SubModule name="u_closed_loop_motors" T_Register="264(0)" T_Alu="366(0)" T_Lut="428(0)" T_MULT27X36="2(0)">
+  <SubModule name="u_left_motor" Register="1" Lut="50" T_Register="132(1)" T_Alu="183(0)" T_Lut="217(50)" T_MULT27X36="1(0)">
+   <SubModule name="u_encoder" Register="38" Alu="32" Lut="3" T_Register="38(38)" T_Alu="32(32)" T_Lut="3(3)"/>
+   <SubModule name="u_speed_measure" Register="53" Alu="33" Lut="36" MULT27X36="1" T_Register="53(53)" T_Alu="33(33)" T_Lut="36(36)" T_MULT27X36="1(1)"/>
+   <SubModule name="g_fast_pi.u_pi" Register="28" Alu="97" Lut="101" T_Register="28(28)" T_Alu="97(97)" T_Lut="101(101)"/>
+   <SubModule name="u_motor_control" T_Register="12(0)" T_Alu="21(0)" T_Lut="27(0)">
+    <SubModule name="u_pwm" Register="12" Alu="21" Lut="22" T_Register="12(12)" T_Alu="21(21)" T_Lut="22(22)"/>
+    <SubModule name="u_dir" Lut="5" T_Lut="5(5)"/>
+   </SubModule>
+  </SubModule>
+  <SubModule name="u_right_motor" Register="1" Lut="50" T_Register="132(1)" T_Alu="183(0)" T_Lut="211(50)" T_MULT27X36="1(0)">
+   <SubModule name="u_encoder" Register="38" Alu="32" Lut="3" T_Register="38(38)" T_Alu="32(32)" T_Lut="3(3)"/>
+   <SubModule name="u_speed_measure" Register="53" Alu="33" Lut="36" MULT27X36="1" T_Register="53(53)" T_Alu="33(33)" T_Lut="36(36)" T_MULT27X36="1(1)"/>
+   <SubModule name="g_fast_pi.u_pi" Register="28" Alu="97" Lut="94" T_Register="28(28)" T_Alu="97(97)" T_Lut="94(94)"/>
+   <SubModule name="u_motor_control" T_Register="12(0)" T_Alu="21(0)" T_Lut="28(0)">
+    <SubModule name="u_pwm" Register="12" Alu="21" Lut="23" T_Register="12(12)" T_Alu="21(21)" T_Lut="23(23)"/>
+    <SubModule name="u_dir" Lut="5" T_Lut="5(5)"/>
+   </SubModule>
+  </SubModule>
+ </SubModule>
+ <SubModule name="u_driver_adapter" Register="37" Alu="4" Lut="79" T_Register="37(37)" T_Alu="4(4)" T_Lut="79(79)"/>
+ <SubModule name="u_camera_display" T_Register="4783(0)" T_Alu="294(0)" T_Lut="4430(0)" T_Bsram="17(0)">
+  <SubModule name="camera_pll"/>
+  <SubModule name="Gowin_PLL"/>
+  <SubModule name="camera_init" Register="34" Lut="74" T_Register="101(34)" T_Lut="260(74)" T_Bsram="1(0)">
+   <SubModule name="ov5640_init_table_rgb_inst" Bsram="1" T_Bsram="1(1)"/>
+   <SubModule name="i2c_control" Register="44" Lut="109" T_Register="67(44)" T_Lut="186(109)">
+    <SubModule name="i2c_bit_shift" Register="23" Lut="77" T_Register="23(23)" T_Lut="77(77)"/>
+   </SubModule>
+  </SubModule>
+  <SubModule name="DVP_Capture" Register="34" Lut="12" T_Register="34(34)" T_Lut="12(12)"/>
+  <SubModule name="ddr3_ctrl_2port" T_Register="3738(0)" T_Alu="165(0)" T_Lut="2621(0)" T_Bsram="16(0)">
+   <SubModule name="fifo_ddr3_adapter" Register="139" Lut="262" T_Register="333(139)" T_Alu="40(0)" T_Lut="626(262)" T_Bsram="8(0)">
+    <SubModule name="rd_data_fifo" Register="97" Alu="20" Lut="286" Bsram="4" T_Register="97(97)" T_Alu="20(20)" T_Lut="286(286)" T_Bsram="4(4)"/>
+    <SubModule name="wr_data_fifo" Register="97" Alu="20" Lut="78" Bsram="4" T_Register="97(97)" T_Alu="20(20)" T_Lut="78(78)" T_Bsram="4(4)"/>
+   </SubModule>
+   <SubModule name="DDR3_Memory_Interface_Top" Register="3405" Alu="125" Lut="1995" Bsram="8" T_Register="3405(3405)" T_Alu="125(125)" T_Lut="1995(1995)" T_Bsram="8(8)"/>
+  </SubModule>
+  <SubModule name="disp_driver" Register="40" Lut="81" T_Register="40(40)" T_Lut="81(81)"/>
+  <SubModule name="u_red_target_detector" Register="157" Alu="60" Lut="113" T_Register="157(157)" T_Alu="60(60)" T_Lut="113(113)"/>
+  <SubModule name="u_sensor_osd" Register="292" Lut="470" T_Register="620(292)" T_Lut="873(470)">
+   <SubModule name="u_bcd_distance" Register="62" Lut="63" T_Register="62(62)" T_Lut="63(63)"/>
+   <SubModule name="u_bcd_roll" Register="58" Lut="82" T_Register="58(58)" T_Lut="82(82)"/>
+   <SubModule name="u_bcd_pitch" Register="58" Lut="82" T_Register="58(58)" T_Lut="82(82)"/>
+   <SubModule name="u_bcd_yaw" Register="58" Lut="82" T_Register="58(58)" T_Lut="82(82)"/>
+   <SubModule name="u_bcd_left" Register="46" Lut="47" T_Register="46(46)" T_Lut="47(47)"/>
+   <SubModule name="u_bcd_right" Register="46" Lut="47" T_Register="46(46)" T_Lut="47(47)"/>
+  </SubModule>
+  <SubModule name="u_target_box_overlay" Register="20" Lut="242" T_Register="20(20)" T_Lut="242(242)"/>
+  <SubModule name="DVI_TX_Top" Register="73" Alu="69" Lut="228" T_Register="73(73)" T_Alu="69(69)" T_Lut="228(228)"/>
+ </SubModule>
+ <SubModule name="u_perception" Register="32" Alu="30" Lut="64" T_Register="535(32)" T_Alu="356(30)" T_Lut="798(64)" T_MULTALU27X18="6(0)">
+  <SubModule name="u_tof_uart" Register="50" Lut="90" T_Register="50(50)" T_Lut="90(90)"/>
+  <SubModule name="u_tof_parser" Register="61" Alu="29" Lut="46" T_Register="61(61)" T_Alu="29(29)" T_Lut="46(46)"/>
+  <SubModule name="u_tof_gate" Register="36" Alu="86" Lut="33" T_Register="36(36)" T_Alu="86(86)" T_Lut="33(33)"/>
+  <SubModule name="u_tof_average" Register="65" Alu="79" Lut="193" T_Register="65(65)" T_Alu="79(79)" T_Lut="193(193)"/>
+  <SubModule name="u_imu_uart" Register="50" Lut="90" T_Register="50(50)" T_Lut="90(90)"/>
+  <SubModule name="u_imu_uart_alt" Register="47" Lut="89" T_Register="47(47)" T_Lut="89(89)"/>
+  <SubModule name="u_imu_parser" Register="72" Alu="16" Lut="40" MULTALU27X18="3" T_Register="72(72)" T_Alu="16(16)" T_Lut="40(40)" T_MULTALU27X18="3(3)"/>
+  <SubModule name="u_imu_parser_alt" Register="72" Alu="16" Lut="40" MULTALU27X18="3" T_Register="72(72)" T_Alu="16(16)" T_Lut="40(40)" T_MULTALU27X18="3(3)"/>
+  <SubModule name="u_roll_filter" Register="18" Alu="33" Lut="16" T_Register="18(18)" T_Alu="33(33)" T_Lut="16(16)"/>
+  <SubModule name="u_pitch_filter" Register="16" Alu="33" Lut="16" T_Register="16(16)" T_Alu="33(33)" T_Lut="16(16)"/>
+  <SubModule name="u_yaw_filter" Register="16" Alu="34" Lut="81" T_Register="16(16)" T_Alu="34(34)" T_Lut="81(81)"/>
+ </SubModule>
+ <SubModule name="u_telemetry" Register="119" Alu="63" Lut="119" T_Register="166(119)" T_Alu="63(63)" T_Lut="197(119)">
+  <SubModule name="u_uart_tx" Register="47" Lut="78" T_Register="47(47)" T_Lut="78(78)"/>
+ </SubModule>
+</Module>

@@ -1,0 +1,84 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5AT-60B" pn="GW5AT-LV60PG484AC1/I0">gw5at60b-002</Device>
+    <FileList>
+        <File path="src/DVP_Capture/DVP_Capture.v" type="file.verilog" enable="1"/>
+        <File path="src/b_full_top.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/quadrature_encoder.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/speed_measure.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/wheel_rpm_monitor_1480.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/tb6612_dual_safe_adapter.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/PWM.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/DIR.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/motor_control.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/PI_controller.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/PI_controller_fast.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/single_motor_control.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/dual_motor_control.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/wheel_sync_control.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/autonomous_motion_controller.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/safe_motor_command_ramp.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/car_control_core.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/safe_start_stop_latch.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/nec_ir_decoder.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/remote_drive_commands.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/dual_rpm_command_ramp.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/manual_motion_commands.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/waypoint_navigation_controller.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/red_target_detector.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/target_box_overlay.v" type="file.verilog" enable="1"/>
+        <File path="../../../src/target_follow_controller.v" type="file.verilog" enable="1"/>
+        <File path="src/camera_init/camera_init.v" type="file.verilog" enable="1"/>
+        <File path="src/camera_init/i2c_control/i2c_bit_shift.v" type="file.verilog" enable="1"/>
+        <File path="src/camera_init/i2c_control/i2c_control.v" type="file.verilog" enable="1"/>
+        <File path="src/camera_init/ov5640_init_table_jpeg.v" type="file.verilog" enable="1"/>
+        <File path="src/camera_init/ov5640_init_table_rgb.v" type="file.verilog" enable="1"/>
+        <File path="src/camera_pll/camera_pll.v" type="file.verilog" enable="0"/>
+        <File path="src/ddr3_ctrl_2port/ddr3_ctrl_2port.v" type="file.verilog" enable="1"/>
+        <File path="src/ddr3_ctrl_2port/fifo_ddr3_adapter.v" type="file.verilog" enable="1"/>
+        <File path="src/ddr3_memory_interface/ddr3_memory_interface.v" type="file.verilog" enable="0"/>
+        <File path="src/ddr3_60b/ddr3_memory_interface_60b/ddr3_memory_interface_60b.v" type="file.verilog" enable="1"/>
+        <File path="src/ddr_pll/ddr_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/dvi_tx/dvi_tx.v" type="file.verilog" enable="1"/>
+        <File path="src/true_hdmi/auxiliary_video_information_info_frame.sv" type="file.verilog" enable="1"/>
+        <File path="src/true_hdmi/packet_assembler.sv" type="file.verilog" enable="1"/>
+        <File path="src/true_hdmi/packet_picker.sv" type="file.verilog" enable="1"/>
+        <File path="src/true_hdmi/tmds_channel.sv" type="file.verilog" enable="1"/>
+        <File path="src/true_hdmi/serializer_gowin.sv" type="file.verilog" enable="1"/>
+        <File path="src/true_hdmi/hdmi.sv" type="file.verilog" enable="1"/>
+        <File path="src/true_hdmi/true_hdmi_720p60_tx.sv" type="file.verilog" enable="1"/>
+        <File path="src/gowin_clkdiv/gowin_clkdiv.v" type="file.verilog" enable="0"/>
+        <File path="src/gowin_ddr/gowin_ddr.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_pll/gowin_pll.v" type="file.verilog" enable="0"/>
+        <File path="src/gowin_rpll/gowin_rpll.v" type="file.verilog" enable="0"/>
+        <File path="src/ov5640_ddr3_hdmi.v" type="file.verilog" enable="1"/>
+        <File path="src/perception/common/uart_rx.v" type="file.verilog" enable="1"/>
+        <File path="src/perception/common/uart_tx.v" type="file.verilog" enable="1"/>
+        <File path="../../rtl/common/uart_tx_v3.v" type="file.verilog" enable="1"/>
+        <File path="src/perception/filter/angle_iir_filter.v" type="file.verilog" enable="1"/>
+        <File path="src/perception/filter/moving_average4_unsigned.v" type="file.verilog" enable="1"/>
+        <File path="src/perception/filter/signed_iir_filter.v" type="file.verilog" enable="1"/>
+        <File path="src/perception/filter/tof_outlier_gate.v" type="file.verilog" enable="1"/>
+        <File path="src/perception/imu/wt901_parser.v" type="file.verilog" enable="1"/>
+        <File path="src/perception/integration/perception_hub.v" type="file.verilog" enable="1"/>
+        <File path="../../rtl/integration/sensor_telemetry_tx_v3.v" type="file.verilog" enable="1"/>
+        <File path="src/perception/tof/tfmini_s_parser.v" type="file.verilog" enable="1"/>
+        <File path="src/pll_60b/camera_pll_60b.v" type="file.verilog" enable="1"/>
+        <File path="src/pll_60b/gowin_pll_60b.v" type="file.verilog" enable="1"/>
+        <File path="src/pll_60b/pll_mDRP_intf.v" type="file.verilog" enable="1"/>
+        <File path="src/rd_data_fifo/rd_data_fifo.v" type="file.verilog" enable="1"/>
+        <File path="src/vga/disp_driver.v" type="file.verilog" enable="1"/>
+        <File path="src/vga/disp_parameter_cfg.v" type="file.verilog" enable="1"/>
+        <File path="src/vga/dvi_encoder.v" type="file.verilog" enable="1"/>
+        <File path="src/vga/sensor_osd_overlay.v" type="file.verilog" enable="1"/>
+        <File path="src/wr_data_fifo/wr_data_fifo.v" type="file.verilog" enable="1"/>
+        <File path="src/ov5640_ddr3_hdmi.cst" type="file.cst" enable="0"/>
+        <File path="src/ov5640_ddr3_hdmi_60b.cst" type="file.cst" enable="0"/>
+        <File path="src/ov5640_ddr3_hdmi_60b_fixed.cst" type="file.cst" enable="0"/>
+        <File path="src/ov5640_ddr3_hdmi_60b_dviip.cst" type="file.cst" enable="1"/>
+        <File path="src/b_full_top.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>

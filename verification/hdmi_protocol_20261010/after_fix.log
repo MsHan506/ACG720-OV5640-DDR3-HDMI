@@ -1,0 +1,32 @@
+# vsim -c -voptargs="+acc" work.tb_hdmi_protocol -l after_fix.log -do "run -all; quit -f" 
+# Start time: 22:07:29 on Oct 10,2026
+# Loading sv_std.std
+# Loading work.tb_hdmi_protocol
+# Loading work.GSR
+# Loading work.hdmi
+# Loading work.serializer
+# Loading work.OSER10
+# Loading work.packet_picker
+# Loading work.auxiliary_video_information_info_frame
+# Loading work.packet_assembler
+# Loading work.tmds_channel
+# run -all
+# FAIL x=1292 y=725 data guard mismatch
+# FAIL x=1293 y=725 data guard mismatch
+# FAIL x=1326 y=725 data guard mismatch
+# FAIL x=1327 y=725 data guard mismatch
+# FAIL x=1292 y=726 data guard mismatch
+# FAIL x=1293 y=726 data guard mismatch
+# FAIL x=1326 y=726 data guard mismatch
+# FAIL x=1327 y=726 data guard mismatch
+# FAIL x=1292 y=727 data guard mismatch
+# FAIL x=1293 y=727 data guard mismatch
+# FAIL x=1326 y=727 data guard mismatch
+# FAIL x=1327 y=727 data guard mismatch
+# RESULT pixels=2475000 video=1843200 control=574920 island_pixels=48000 AVI=2 failures=40
+# ** Fatal: HDMI protocol regression failed
+#    Time: 50000077947 ps  Scope: tb_hdmi_protocol File: tb_hdmi_protocol.sv Line: 142
+# ** Note: $finish    : tb_hdmi_protocol.sv(142)
+#    Time: 50000077947 ps  Iteration: 0  Instance: /tb_hdmi_protocol
+# End time: 22:08:14 on Oct 10,2026, Elapsed time: 0:00:45
+# Errors: 1, Warnings: 0

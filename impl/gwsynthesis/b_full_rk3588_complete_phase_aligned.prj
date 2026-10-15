@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW5AT-60B" package="PBGA484A" speed="1" partNumber="GW5AT-LV60PG484AC1/I0"/>
+    <FileList>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\DVP_Capture\DVP_Capture.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\b_full_top.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\quadrature_encoder.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\speed_measure.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\wheel_rpm_monitor_1480.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\tb6612_dual_safe_adapter.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\PWM.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\DIR.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\motor_control.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\PI_controller.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\PI_controller_fast.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\single_motor_control.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\dual_motor_control.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\wheel_sync_control.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\autonomous_motion_controller.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\safe_motor_command_ramp.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\car_control_core.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\safe_start_stop_latch.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\nec_ir_decoder.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\remote_drive_commands.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\dual_rpm_command_ramp.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\manual_motion_commands.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\waypoint_navigation_controller.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\red_target_detector.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\target_box_overlay.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\target_follow_controller.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\src\ai_uart_command_receiver.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\camera_init\camera_init.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\camera_init\i2c_control\i2c_bit_shift.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\camera_init\i2c_control\i2c_control.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\camera_init\ov5640_init_table_jpeg.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\camera_init\ov5640_init_table_rgb.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\ddr3_ctrl_2port\ddr3_ctrl_2port.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\ddr3_ctrl_2port\fifo_ddr3_adapter.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\ddr3_60b\ddr3_memory_interface_60b\ddr3_memory_interface_60b.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\ddr_pll\ddr_pll.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\dvi_tx\dvi_tx.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\true_hdmi\auxiliary_video_information_info_frame.sv" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\true_hdmi\packet_assembler.sv" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\true_hdmi\packet_picker.sv" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\true_hdmi\tmds_channel.sv" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\true_hdmi\serializer_gowin.sv" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\true_hdmi\hdmi.sv" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\true_hdmi\true_hdmi_720p60_tx.sv" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\gowin_ddr\gowin_ddr.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\ov5640_ddr3_hdmi.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\perception\common\uart_rx.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\perception\common\uart_tx.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\perception\filter\angle_iir_filter.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\perception\filter\moving_average4_unsigned.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\perception\filter\signed_iir_filter.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\perception\filter\tof_outlier_gate.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\perception\imu\wt901_parser.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\perception\integration\perception_hub.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\perception\integration\telemetry_packet_tx.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\perception\tof\tfmini_s_parser.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\pll_60b\camera_pll_60b.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\pll_60b\gowin_pll_60b.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\rd_data_fifo\rd_data_fifo.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\vga\disp_driver.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\vga\disp_parameter_cfg.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\vga\dvi_encoder.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\vga\sensor_osd_overlay.v" type="verilog"/>
+        <File path="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\wr_data_fifo\wr_data_fifo.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="dsp_style" value="auto"/>
+        <Option type="enable_dsrm" value="0"/>
+        <Option type="global_freq" value="100.000"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="map_option" value="1"/>
+        <Option type="max_fanout" value="1000"/>
+        <Option type="netlist_hierarchy" value="1"/>
+        <Option type="opt_goal" value="auto"/>
+        <Option type="output_file" value="C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\impl\gwsynthesis\b_full_rk3588_complete_phase_aligned.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="ram_style" value="auto"/>
+        <Option type="rom_style" value="auto"/>
+        <Option type="shift_reg" value="auto"/>
+        <Option type="top_module" value="b_full_top"/>
+        <Option type="vcc" value="0.9"/>
+        <Option type="verilog_language" value="sysv-2017"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

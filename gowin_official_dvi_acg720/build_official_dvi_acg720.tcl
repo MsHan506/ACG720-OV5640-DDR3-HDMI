@@ -1,0 +1,5 @@
+open_project ./gowin_official_dvi_acg720.gprj
+set_option -top_module gowin_official_video_top_acg720
+set_option -output_base_name gowin_official_dvi_acg720_720p60
+set_option -use_sspi_as_gpio 1
+run all

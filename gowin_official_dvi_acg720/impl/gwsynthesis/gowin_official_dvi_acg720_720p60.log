@@ -1,0 +1,31 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\gowin_official_dvi_acg720\vendor\dvi_tx\dvi_tx.v'
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\gowin_official_dvi_acg720\src\gw5at_dvi_pll.v'
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\gowin_official_dvi_acg720\vendor\testpattern.v'
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\gowin_official_dvi_acg720\src\gowin_official_video_top_acg720.v'
+Compiling module 'gowin_official_video_top_acg720'("C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\gowin_official_dvi_acg720\src\gowin_official_video_top_acg720.v":28)
+Compiling module 'testpattern'("C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\gowin_official_dvi_acg720\vendor\testpattern.v":18)
+Compiling module 'gw5at_dvi_pll'("C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\gowin_official_dvi_acg720\src\gw5at_dvi_pll.v":4)
+Compiling module 'DVI_TX_Top'("C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\gowin_official_dvi_acg720\vendor\dvi_tx\dvi_tx.v":1044)
+Compiling module '**'("C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\gowin_official_dvi_acg720\vendor\dvi_tx\dvi_tx.v":1043)
+NOTE  (EX0101) : Current top module is "gowin_official_video_top_acg720"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\gowin_official_dvi_acg720\impl\gwsynthesis\gowin_official_dvi_acg720_720p60.vg" completed
+[100%] Generate report file "C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\gowin_official_dvi_acg720\impl\gwsynthesis\gowin_official_dvi_acg720_720p60_syn.rpt.html" completed
+GowinSynthesis finish

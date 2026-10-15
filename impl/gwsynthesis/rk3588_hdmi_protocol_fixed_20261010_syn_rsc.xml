@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="rk3588_hdmi_link_test_top" Register="54" Alu="25" Lut="47" T_Register="196(54)" T_Alu="51(25)" T_Lut="300(47)">
+ <SubModule name="u_hdmi_pll"/>
+ <SubModule name="u_tx" Lut="9" T_Register="142(0)" T_Alu="26(0)" T_Lut="253(9)">
+  <SubModule name="u_hdmi" Register="53" Alu="10" Lut="53" T_Register="142(53)" T_Alu="26(10)" T_Lut="244(53)">
+   <SubModule name="true_hdmi_output.packet_picker" Register="2" Lut="5" T_Register="2(2)" T_Lut="5(5)"/>
+   <SubModule name="true_hdmi_output.packet_assembler" Register="45" Alu="4" Lut="85" T_Register="45(45)" T_Alu="4(4)" T_Lut="85(85)"/>
+   <SubModule name="tmds_gen[0].tmds_channel" Register="14" Alu="4" Lut="42" T_Register="14(14)" T_Alu="4(4)" T_Lut="42(42)"/>
+   <SubModule name="tmds_gen[1].tmds_channel" Register="14" Alu="4" Lut="29" T_Register="14(14)" T_Alu="4(4)" T_Lut="29(29)"/>
+   <SubModule name="tmds_gen[2].tmds_channel" Register="14" Alu="4" Lut="30" T_Register="14(14)" T_Alu="4(4)" T_Lut="30(30)"/>
+   <SubModule name="serializer"/>
+  </SubModule>
+ </SubModule>
+</Module>
