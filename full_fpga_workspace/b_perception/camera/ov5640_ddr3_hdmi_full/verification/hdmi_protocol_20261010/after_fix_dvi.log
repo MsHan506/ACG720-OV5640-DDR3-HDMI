@@ -1,0 +1,15 @@
+# vsim -c -voptargs="+acc" work.tb_hdmi_protocol -l after_fix_dvi.log -do "run -all; quit -f" -gDVI_MODE=1 
+# Start time: 22:46:13 on Oct 13,2026
+# Loading sv_std.std
+# Loading work.tb_hdmi_protocol
+# Loading work.GSR
+# Loading work.hdmi
+# Loading work.serializer
+# Loading work.OSER10
+# Loading work.tmds_channel
+# run -all
+# RESULT pixels=2475000 video=1843200 control=631800 island_pixels=0 AVI=0 failures=0
+# ** Note: $finish    : tb_hdmi_protocol.sv(151)
+#    Time: 50000077947 ps  Iteration: 0  Instance: /tb_hdmi_protocol
+# End time: 22:46:49 on Oct 13,2026, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 0

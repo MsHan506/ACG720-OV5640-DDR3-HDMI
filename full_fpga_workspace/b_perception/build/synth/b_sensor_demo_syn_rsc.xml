@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="b_sensor_demo_top" Register="2" Lut="88" T_Register="547(2)" T_Alu="372(0)" T_Lut="815(88)" T_MULTALU27X18="3(0)">
+ <SubModule name="u_perception_hub" T_Register="379(0)" T_Alu="309(0)" T_Lut="527(0)" T_MULTALU27X18="3(0)">
+  <SubModule name="u_tof_uart" Register="49" Lut="89" T_Register="49(49)" T_Lut="89(89)"/>
+  <SubModule name="u_tof_parser" Register="60" Alu="28" Lut="42" T_Register="60(60)" T_Alu="28(28)" T_Lut="42(42)"/>
+  <SubModule name="u_tof_gate" Register="35" Alu="86" Lut="32" T_Register="35(35)" T_Alu="86(86)" T_Lut="32(32)"/>
+  <SubModule name="u_tof_average" Register="65" Alu="79" Lut="125" T_Register="65(65)" T_Alu="79(79)" T_Lut="125(125)"/>
+  <SubModule name="u_imu_uart" Register="49" Lut="89" T_Register="49(49)" T_Lut="89(89)"/>
+  <SubModule name="u_imu_parser" Register="71" Alu="16" Lut="39" MULTALU27X18="3" T_Register="71(71)" T_Alu="16(16)" T_Lut="39(39)" T_MULTALU27X18="3(3)"/>
+  <SubModule name="u_roll_filter" Register="18" Alu="33" Lut="16" T_Register="18(18)" T_Alu="33(33)" T_Lut="16(16)"/>
+  <SubModule name="u_pitch_filter" Register="16" Alu="33" Lut="16" T_Register="16(16)" T_Alu="33(33)" T_Lut="16(16)"/>
+  <SubModule name="u_yaw_filter" Register="16" Alu="34" Lut="79" T_Register="16(16)" T_Alu="34(34)" T_Lut="79(79)"/>
+ </SubModule>
+ <SubModule name="u_telemetry" Register="119" Alu="63" Lut="121" T_Register="166(119)" T_Alu="63(63)" T_Lut="200(121)">
+  <SubModule name="u_uart_tx" Register="47" Lut="79" T_Register="47(47)" T_Lut="79(79)"/>
+ </SubModule>
+</Module>

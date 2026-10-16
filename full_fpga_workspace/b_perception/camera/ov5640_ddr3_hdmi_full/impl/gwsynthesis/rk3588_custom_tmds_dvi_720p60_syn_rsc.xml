@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="rk3588_custom_dvi_link_test_top" T_Register="111(0)" T_Alu="47(0)" T_Lut="110(0)">
+ <SubModule name="u_test" Register="54" Alu="25" Lut="46" T_Register="111(54)" T_Alu="47(25)" T_Lut="110(46)">
+  <SubModule name="u_hdmi_pll"/>
+  <SubModule name="u_tx" Lut="9" T_Register="57(0)" T_Alu="22(0)" T_Lut="64(9)">
+   <SubModule name="u_hdmi" Register="33" Alu="10" Lut="32" T_Register="57(33)" T_Alu="22(10)" T_Lut="55(32)">
+    <SubModule name="tmds_gen[0].tmds_channel" Register="8" Alu="4" Lut="9" T_Register="8(8)" T_Alu="4(4)" T_Lut="9(9)"/>
+    <SubModule name="tmds_gen[1].tmds_channel" Register="8" Alu="4" Lut="7" T_Register="8(8)" T_Alu="4(4)" T_Lut="7(7)"/>
+    <SubModule name="tmds_gen[2].tmds_channel" Register="8" Alu="4" Lut="7" T_Register="8(8)" T_Alu="4(4)" T_Lut="7(7)"/>
+    <SubModule name="serializer"/>
+   </SubModule>
+  </SubModule>
+ </SubModule>
+</Module>

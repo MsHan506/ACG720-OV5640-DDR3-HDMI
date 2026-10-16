@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5AT-60B" pn="GW5AT-LV60PG484AC1/I0">gw5at60b-002</Device>
+    <FileList>
+        <File path="src/camera_diag_top.v" type="file.verilog" enable="1"/>
+        <File path="../ov5640_ddr3_hdmi_full/src/pll_60b/camera_pll_60b.v" type="file.verilog" enable="1"/>
+        <File path="../ov5640_ddr3_hdmi_full/src/camera_init/camera_init.v" type="file.verilog" enable="1"/>
+        <File path="../ov5640_ddr3_hdmi_full/src/camera_init/i2c_control/i2c_bit_shift.v" type="file.verilog" enable="1"/>
+        <File path="../ov5640_ddr3_hdmi_full/src/camera_init/i2c_control/i2c_control.v" type="file.verilog" enable="1"/>
+        <File path="../ov5640_ddr3_hdmi_full/src/camera_init/ov5640_init_table_rgb.v" type="file.verilog" enable="1"/>
+        <File path="../ov5640_ddr3_hdmi_full/src/camera_init/ov5640_init_table_jpeg.v" type="file.verilog" enable="1"/>
+        <File path="src/camera_diag.cst" type="file.cst" enable="1"/>
+        <File path="src/camera_diag.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>

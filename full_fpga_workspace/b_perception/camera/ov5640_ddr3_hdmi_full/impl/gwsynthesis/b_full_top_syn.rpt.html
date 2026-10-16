@@ -1,0 +1,9689 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>synthesis Report</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
+div#main_wrapper{ width: 100%; }
+div#content { margin-left: 350px; margin-right: 30px; }
+div#catalog_wrapper {position: fixed; top: 30px; width: 350px; float: left; }
+div#catalog ul { list-style-type: none; }
+div#catalog li { text-align: left; list-style-type:circle; color: #0084ff; margin-top: 3px; margin-bottom: 3px; }
+div#catalog a { display:inline-block; text-decoration: none; color: #0084ff; font-weight: bold; padding: 3px; }
+div#catalog a:visited { color: #0084ff; }
+div#catalog a:hover { color: #fff; background: #0084ff; }
+hr { margin-top: 30px; margin-bottom: 30px; }
+h1, h3 { text-align: center; }
+h1 {margin-top: 50px; }
+table, th, td { border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { padding: 5px 5px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table.summary_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.detail_table td.label { min-width: 100px; width: 8%;}
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="catalog_wrapper">
+<div id="catalog">
+<ul>
+<li><a href="#about" style=" font-size: 16px;">Synthesis Messages</a></li>
+<li><a href="#summary" style=" font-size: 16px;">Synthesis Details</a></li>
+<li><a href="#resource" style=" font-size: 16px;">Resource</a>
+<ul>
+<li><a href="#usage" style=" font-size: 14px;">Resource Usage Summary</a></li>
+<li><a href="#utilization" style=" font-size: 14px;">Resource Utilization Summary</a></li>
+</ul>
+</li>
+<li><a href="#timing" style=" font-size: 16px;">Timing</a>
+<ul>
+<li><a href="#clock" style=" font-size: 14px;">Clock Summary</a></li>
+<li><a href="#performance" style=" font-size: 14px;">Max Frequency Summary</a></li>
+<li><a href="#detail timing" style=" font-size: 14px;">Detail Timing Paths Informations</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- catalog -->
+</div><!-- catalog_wrapper -->
+<div id="content">
+<h1><a name="about">Synthesis Messages</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Report Title</td>
+<td>GowinSynthesis Report</td>
+</tr>
+<tr>
+<td class="label">Design File</td>
+<td>C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\DVP_Capture\DVP_Capture.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\b_full_top.v<br>
+C:\chatgpt\fpga\src\quadrature_encoder.v<br>
+C:\chatgpt\fpga\src\speed_measure.v<br>
+C:\chatgpt\fpga\src\wheel_rpm_monitor_1480.v<br>
+C:\chatgpt\fpga\src\tb6612_dual_safe_adapter.v<br>
+C:\chatgpt\fpga\src\PWM.v<br>
+C:\chatgpt\fpga\src\DIR.v<br>
+C:\chatgpt\fpga\src\motor_control.v<br>
+C:\chatgpt\fpga\src\PI_controller.v<br>
+C:\chatgpt\fpga\src\single_motor_control.v<br>
+C:\chatgpt\fpga\src\dual_motor_control.v<br>
+C:\chatgpt\fpga\src\wheel_sync_control.v<br>
+C:\chatgpt\fpga\src\autonomous_motion_controller.v<br>
+C:\chatgpt\fpga\src\car_control_core.v<br>
+C:\chatgpt\fpga\src\safe_start_stop_latch.v<br>
+C:\chatgpt\fpga\src\nec_ir_decoder.v<br>
+C:\chatgpt\fpga\src\remote_drive_commands.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\camera_init\camera_init.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\camera_init\i2c_control\i2c_bit_shift.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\camera_init\i2c_control\i2c_control.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\camera_init\ov5640_init_table_jpeg.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\camera_init\ov5640_init_table_rgb.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\ddr3_ctrl_2port\ddr3_ctrl_2port.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\ddr3_ctrl_2port\fifo_ddr3_adapter.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\ddr3_60b\ddr3_memory_interface_60b\ddr3_memory_interface_60b.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\ddr_pll\ddr_pll.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\dvi_tx\dvi_tx.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\gowin_ddr\gowin_ddr.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\ov5640_ddr3_hdmi.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\perception\common\uart_rx.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\perception\common\uart_tx.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\perception\filter\angle_iir_filter.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\perception\filter\moving_average4_unsigned.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\perception\filter\signed_iir_filter.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\perception\filter\tof_outlier_gate.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\perception\imu\wt901_parser.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\perception\integration\perception_hub.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\perception\integration\telemetry_packet_tx.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\perception\tof\tfmini_s_parser.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\pll_60b\camera_pll_60b.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\pll_60b\gowin_pll_60b.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\rd_data_fifo\rd_data_fifo.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\vga\disp_driver.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\vga\disp_parameter_cfg.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\vga\dvi_encoder.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\vga\sensor_osd_overlay.v<br>
+C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\wr_data_fifo\wr_data_fifo.v<br>
+</td>
+</tr>
+<tr>
+<td class="label">GowinSynthesis Constraints File</td>
+<td>---</td>
+</tr>
+<tr>
+<td class="label">Tool Version</td>
+<td>V1.9.12.03 (64-bit)</td>
+</tr>
+<tr>
+<td class="label">Part Number</td>
+<td>GW5AT-LV60PG484AC1/I0</td>
+</tr>
+<tr>
+<td class="label">Device</td>
+<td>GW5AT-60</td>
+</tr>
+<tr>
+<td class="label">Device Version</td>
+<td>B</td>
+</tr>
+<tr>
+<td class="label">Created Time</td>
+<td>Fri Oct  2 01:01:49 2026
+</td>
+</tr>
+<tr>
+<td class="label">Legal Announcement</td>
+<td>Copyright (C)2014-2026 Gowin Semiconductor Corporation. ALL rights reserved.</td>
+</tr>
+</table>
+<h1><a name="summary">Synthesis Details</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Top Level Module</td>
+<td>b_full_top</td>
+</tr>
+<tr>
+<td class="label">Synthesis Process</td>
+<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s, Peak memory usage = 236.363MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s, Peak memory usage = 236.363MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.531s, Elapsed time = 0h 0m 0.527s, Peak memory usage = 236.363MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s, Peak memory usage = 236.363MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.578s, Elapsed time = 0h 0m 0.576s, Peak memory usage = 236.363MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0.171s, Elapsed time = 0h 0m 0.174s, Peak memory usage = 236.363MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0.093s, Elapsed time = 0h 0m 0.084s, Peak memory usage = 236.363MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0.062s, Elapsed time = 0h 0m 0.074s, Peak memory usage = 236.363MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s, Peak memory usage = 236.363MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s, Peak memory usage = 236.363MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.421s, Elapsed time = 0h 0m 0.422s, Peak memory usage = 236.363MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 9s, Elapsed time = 0h 0m 9s, Peak memory usage = 236.363MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.562s, Elapsed time = 0h 0m 0.605s, Peak memory usage = 236.363MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.734s, Elapsed time = 0h 0m 0.778s, Peak memory usage = 259.621MB<br/></td>
+</tr>
+<tr>
+<td class="label">Total Time and Memory Usage</td>
+<td>CPU time = 0h 0m 20s, Elapsed time = 0h 0m 20s, Peak memory usage = 259.621MB</td>
+</tr>
+</table>
+<h1><a name="resource">Resource</a></h1>
+<h2><a name="usage">Resource Usage Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Resource</b></td>
+<td><b>Usage</b></td>
+</tr>
+<tr>
+<td class="label"><b>I/O Port </b></td>
+<td>100</td>
+</tr>
+<tr>
+<td class="label"><b>I/O Buf </b></td>
+<td>93</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIBUF</td>
+<td>22</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOBUF</td>
+<td>45</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspTBUF</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIOBUF</td>
+<td>17</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspTLVDS_OBUF</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspELVDS_OBUF</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspELVDS_IOBUF</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label"><b>Register </b></td>
+<td>5917</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFSE</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFRE</td>
+<td>266</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFPE</td>
+<td>98</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFCE</td>
+<td>5552</td>
+</tr>
+<tr>
+<td class="label"><b>LUT </b></td>
+<td>6146</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT2</td>
+<td>776</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT3</td>
+<td>2198</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT4</td>
+<td>3172</td>
+</tr>
+<tr>
+<td class="label"><b>ALU </b></td>
+<td>854</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspALU</td>
+<td>854</td>
+</tr>
+<tr>
+<td class="label"><b>INV </b></td>
+<td>35</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspINV</td>
+<td>35</td>
+</tr>
+<tr>
+<td class="label"><b>IOLOGIC </b></td>
+<td>80</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIDES8_MEM</td>
+<td>16</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOSER8</td>
+<td>24</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOSER8_MEM</td>
+<td>20</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOSER10</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIODELAY</td>
+<td>16</td>
+</tr>
+<tr>
+<td class="label"><b>DSP </b></td>
+<td></td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspMULTALU27X18</td>
+<td>7</td>
+</tr>
+<tr>
+<td class="label"><b>BSRAM </b></td>
+<td>17</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspSDPB</td>
+<td>12</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspSDPX9B</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsppROM</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label"><b>CLOCK </b></td>
+<td>7</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspCLKDIV</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDQS</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDDRDLL</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspPLLA</td>
+<td>2</td>
+</tr>
+</table>
+<h2><a name="utilization">Resource Utilization Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Resource</b></td>
+<td><b>Usage</b></td>
+<td><b>Utilization</b></td>
+</tr>
+<tr>
+<td class="label">Logic</td>
+<td>7035(6181 LUT, 854 ALU) / 59904</td>
+<td>12%</td>
+</tr>
+<tr>
+<td class="label">Register</td>
+<td>5917 / 60780</td>
+<td>10%</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp--Register as Latch</td>
+<td>0 / 60780</td>
+<td>0%</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp--Register as FF</td>
+<td>5917 / 60780</td>
+<td>10%</td>
+</tr>
+<tr>
+<td class="label">BSRAM</td>
+<td>17 / 118</td>
+<td>15%</td>
+</tr>
+</table>
+<h1><a name="timing">Timing</a></h1>
+<h2><a name="clock">Clock Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>NO.</th>
+<th>Clock Name</th>
+<th>Type</th>
+<th>Period</th>
+<th>Frequency(MHz)</th>
+<th>Rise</th>
+<th>Fall</th>
+<th>Source</th>
+<th>Master</th>
+<th>Object</th>
+</tr>
+<tr>
+<td>1</td>
+<td>clk50M</td>
+<td>Base</td>
+<td>20.000</td>
+<td>50.000</td>
+<td>0.000</td>
+<td>10.000</td>
+<td> </td>
+<td> </td>
+<td>clk50M_ibuf/I </td>
+</tr>
+<tr>
+<td>2</td>
+<td>camera_pclk</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.000</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>camera_pclk_ibuf/I </td>
+</tr>
+<tr>
+<td>3</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0.default_gen_clk</td>
+<td>Generated</td>
+<td>5.000</td>
+<td>200.000</td>
+<td>0.000</td>
+<td>2.500</td>
+<td>clk50M_ibuf/I</td>
+<td>clk50M</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0 </td>
+</tr>
+<tr>
+<td>4</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT1.default_gen_clk</td>
+<td>Generated</td>
+<td>20.000</td>
+<td>50.000</td>
+<td>0.000</td>
+<td>10.000</td>
+<td>clk50M_ibuf/I</td>
+<td>clk50M</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT1 </td>
+</tr>
+<tr>
+<td>5</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>20.000</td>
+<td>50.000</td>
+<td>0.000</td>
+<td>10.000</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0.default_gen_clk</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT </td>
+</tr>
+<tr>
+<td>6</td>
+<td>u_camera_display/camera_pll/pll_inst/CLKOUT0.default_gen_clk</td>
+<td>Generated</td>
+<td>2.667</td>
+<td>375.000</td>
+<td>0.000</td>
+<td>1.333</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT1</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT1.default_gen_clk</td>
+<td>u_camera_display/camera_pll/pll_inst/CLKOUT0 </td>
+</tr>
+<tr>
+<td>7</td>
+<td>u_camera_display/camera_pll/pll_inst/CLKOUT1.default_gen_clk</td>
+<td>Generated</td>
+<td>40.000</td>
+<td>25.000</td>
+<td>0.000</td>
+<td>20.000</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT1</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT1.default_gen_clk</td>
+<td>u_camera_display/camera_pll/pll_inst/CLKOUT1 </td>
+</tr>
+<tr>
+<td>8</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>13.333</td>
+<td>75.000</td>
+<td>0.000</td>
+<td>6.667</td>
+<td>u_camera_display/camera_pll/pll_inst/CLKOUT0</td>
+<td>u_camera_display/camera_pll/pll_inst/CLKOUT0.default_gen_clk</td>
+<td>u_camera_display/u_clkdiv/CLKOUT </td>
+</tr>
+</table>
+<h2><a name="performance">Max Frequency Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>NO.</th>
+<th>Clock Name</th>
+<th>Constraint</th>
+<th>Actual Fmax</th>
+<th>Logic Level</th>
+<th>Entity</th>
+</tr>
+<tr>
+<td>1</td>
+<td>clk50M</td>
+<td>50.000(MHz)</td>
+<td>55.407(MHz)</td>
+<td>25</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>2</td>
+<td>camera_pclk</td>
+<td>100.000(MHz)</td>
+<td>183.087(MHz)</td>
+<td>7</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>3</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0.default_gen_clk</td>
+<td>200.000(MHz)</td>
+<td>1293.494(MHz)</td>
+<td>1</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>4</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT1.default_gen_clk</td>
+<td>50.000(MHz)</td>
+<td>161.235(MHz)</td>
+<td>9</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>5</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+<td>50.000(MHz)</td>
+<td>192.400(MHz)</td>
+<td>3</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>6</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+<td>75.000(MHz)</td>
+<td>92.141(MHz)</td>
+<td>14</td>
+<td>TOP</td>
+</tr>
+</table>
+<h2><a name="detail timing">Detail Timing Paths Information</a></h2>
+<h3>Path&nbsp1</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>0.525</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>2.157</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>2.682</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_init/read_rclksel_conf_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[1].u_ddr_phy_data_lane/u_ddr_phy_data_io/u_dqs</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0.default_gen_clk[F]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>3679</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_init/read_rclksel_conf_1_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>11</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_init/read_rclksel_conf_1_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_init/hold_Z_1_s/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_init/hold_Z_1_s/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[1].u_ddr_phy_data_lane/u_ddr_phy_data_io/u_dqs/HOLD</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>2.500</td>
+<td>2.500</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>2.500</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0.default_gen_clk</td>
+</tr>
+<tr>
+<td>2.838</td>
+<td>0.337</td>
+<td>tCL</td>
+<td>FF</td>
+<td>64</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0</td>
+</tr>
+<tr>
+<td>3.153</td>
+<td>0.315</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[1].u_ddr_phy_data_lane/u_ddr_phy_data_io/u_dqs/FCLK</td>
+</tr>
+<tr>
+<td>3.118</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[1].u_ddr_phy_data_lane/u_ddr_phy_data_io/u_dqs</td>
+</tr>
+<tr>
+<td>2.682</td>
+<td>-0.436</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[1].u_ddr_phy_data_lane/u_ddr_phy_data_io/u_dqs</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>-0.011</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>2.500</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 0.474, 31.726%; route: 0.675, 45.214%; tC2Q: 0.344, 23.060%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp2</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>0.525</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>2.157</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>2.682</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_init/read_rclksel_conf_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[0].u_ddr_phy_data_lane/u_ddr_phy_data_io/u_dqs</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0.default_gen_clk[F]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>3679</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_init/read_rclksel_conf_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>11</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_init/read_rclksel_conf_0_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_init/hold_Z_0_s/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_init/hold_Z_0_s/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[0].u_ddr_phy_data_lane/u_ddr_phy_data_io/u_dqs/HOLD</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>2.500</td>
+<td>2.500</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>2.500</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0.default_gen_clk</td>
+</tr>
+<tr>
+<td>2.838</td>
+<td>0.337</td>
+<td>tCL</td>
+<td>FF</td>
+<td>64</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0</td>
+</tr>
+<tr>
+<td>3.153</td>
+<td>0.315</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[0].u_ddr_phy_data_lane/u_ddr_phy_data_io/u_dqs/FCLK</td>
+</tr>
+<tr>
+<td>3.118</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[0].u_ddr_phy_data_lane/u_ddr_phy_data_io/u_dqs</td>
+</tr>
+<tr>
+<td>2.682</td>
+<td>-0.436</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[0].u_ddr_phy_data_lane/u_ddr_phy_data_io/u_dqs</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>-0.011</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>2.500</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 0.474, 31.726%; route: 0.675, 45.214%; tC2Q: 0.344, 23.060%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp3</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>1.952</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>18.328</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>20.280</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_perception/u_tof_average/s1_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_perception/u_tof_average/average_out_0_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>clk50M[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>clk50M[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>clk50M</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>clk50M_ibuf/I</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1658</td>
+<td>clk50M_ibuf/O</td>
+</tr>
+<tr>
+<td>0.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/s1_1_s0/CLK</td>
+</tr>
+<tr>
+<td>0.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/s1_1_s0/Q</td>
+</tr>
+<tr>
+<td>1.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n36_s/I1</td>
+</tr>
+<tr>
+<td>1.525</td>
+<td>0.506</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n36_s/COUT</td>
+</tr>
+<tr>
+<td>1.525</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n35_s/CIN</td>
+</tr>
+<tr>
+<td>1.745</td>
+<td>0.219</td>
+<td>tINS</td>
+<td>FR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n35_s/SUM</td>
+</tr>
+<tr>
+<td>2.082</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n107_s/I0</td>
+</tr>
+<tr>
+<td>2.583</td>
+<td>0.501</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n107_s/COUT</td>
+</tr>
+<tr>
+<td>2.583</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n106_s/CIN</td>
+</tr>
+<tr>
+<td>2.802</td>
+<td>0.219</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n106_s/SUM</td>
+</tr>
+<tr>
+<td>3.140</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n106_s0/I0</td>
+</tr>
+<tr>
+<td>3.640</td>
+<td>0.501</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n106_s0/COUT</td>
+</tr>
+<tr>
+<td>3.640</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n105_s0/CIN</td>
+</tr>
+<tr>
+<td>3.685</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n105_s0/COUT</td>
+</tr>
+<tr>
+<td>3.685</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n104_s0/CIN</td>
+</tr>
+<tr>
+<td>3.730</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n104_s0/COUT</td>
+</tr>
+<tr>
+<td>3.730</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n103_s0/CIN</td>
+</tr>
+<tr>
+<td>3.775</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n103_s0/COUT</td>
+</tr>
+<tr>
+<td>3.775</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n102_s0/CIN</td>
+</tr>
+<tr>
+<td>3.820</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n102_s0/COUT</td>
+</tr>
+<tr>
+<td>3.820</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n101_s0/CIN</td>
+</tr>
+<tr>
+<td>3.865</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n101_s0/COUT</td>
+</tr>
+<tr>
+<td>3.865</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n100_s0/CIN</td>
+</tr>
+<tr>
+<td>3.910</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n100_s0/COUT</td>
+</tr>
+<tr>
+<td>3.910</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n99_s0/CIN</td>
+</tr>
+<tr>
+<td>3.955</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n99_s0/COUT</td>
+</tr>
+<tr>
+<td>3.955</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n98_s0/CIN</td>
+</tr>
+<tr>
+<td>4.000</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n98_s0/COUT</td>
+</tr>
+<tr>
+<td>4.000</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n97_s0/CIN</td>
+</tr>
+<tr>
+<td>4.045</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n97_s0/COUT</td>
+</tr>
+<tr>
+<td>4.045</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n96_s0/CIN</td>
+</tr>
+<tr>
+<td>4.090</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n96_s0/COUT</td>
+</tr>
+<tr>
+<td>4.090</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n95_s0/CIN</td>
+</tr>
+<tr>
+<td>4.135</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n95_s0/COUT</td>
+</tr>
+<tr>
+<td>4.135</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n94_s0/CIN</td>
+</tr>
+<tr>
+<td>4.181</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n94_s0/COUT</td>
+</tr>
+<tr>
+<td>4.181</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n93_s0/CIN</td>
+</tr>
+<tr>
+<td>4.400</td>
+<td>0.219</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n93_s0/SUM</td>
+</tr>
+<tr>
+<td>4.737</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n188_s11/I1</td>
+</tr>
+<tr>
+<td>5.202</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n188_s11/F</td>
+</tr>
+<tr>
+<td>5.540</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n188_s5/I1</td>
+</tr>
+<tr>
+<td>6.004</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>u_perception/u_tof_average/n188_s5/F</td>
+</tr>
+<tr>
+<td>6.342</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n192_s2/I1</td>
+</tr>
+<tr>
+<td>6.806</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>u_perception/u_tof_average/n192_s2/F</td>
+</tr>
+<tr>
+<td>7.144</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n196_s4/I0</td>
+</tr>
+<tr>
+<td>7.617</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>7</td>
+<td>u_perception/u_tof_average/n196_s4/F</td>
+</tr>
+<tr>
+<td>7.955</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n200_s7/I0</td>
+</tr>
+<tr>
+<td>8.429</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n200_s7/F</td>
+</tr>
+<tr>
+<td>8.766</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s10/I0</td>
+</tr>
+<tr>
+<td>9.240</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s10/F</td>
+</tr>
+<tr>
+<td>9.577</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s7/I1</td>
+</tr>
+<tr>
+<td>10.042</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s7/F</td>
+</tr>
+<tr>
+<td>10.379</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s4/I0</td>
+</tr>
+<tr>
+<td>10.853</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n202_s4/F</td>
+</tr>
+<tr>
+<td>11.190</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s1/I2</td>
+</tr>
+<tr>
+<td>11.605</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n202_s1/F</td>
+</tr>
+<tr>
+<td>11.943</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n204_s1/I2</td>
+</tr>
+<tr>
+<td>12.358</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_perception/u_tof_average/n204_s1/F</td>
+</tr>
+<tr>
+<td>12.696</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n208_s4/I1</td>
+</tr>
+<tr>
+<td>13.160</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n208_s4/F</td>
+</tr>
+<tr>
+<td>13.498</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n208_s1/I1</td>
+</tr>
+<tr>
+<td>13.962</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_perception/u_tof_average/n208_s1/F</td>
+</tr>
+<tr>
+<td>14.300</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n212_s4/I1</td>
+</tr>
+<tr>
+<td>14.764</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n212_s4/F</td>
+</tr>
+<tr>
+<td>15.102</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n212_s1/I1</td>
+</tr>
+<tr>
+<td>15.567</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_perception/u_tof_average/n212_s1/F</td>
+</tr>
+<tr>
+<td>15.904</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n216_s4/I1</td>
+</tr>
+<tr>
+<td>16.369</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n216_s4/F</td>
+</tr>
+<tr>
+<td>16.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n218_s2/I0</td>
+</tr>
+<tr>
+<td>17.180</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n218_s2/F</td>
+</tr>
+<tr>
+<td>17.517</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n218_s1/I0</td>
+</tr>
+<tr>
+<td>17.991</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n218_s1/F</td>
+</tr>
+<tr>
+<td>18.328</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/average_out_0_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>20.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>clk50M</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>clk50M_ibuf/I</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1658</td>
+<td>clk50M_ibuf/O</td>
+</tr>
+<tr>
+<td>20.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/average_out_0_s0/CLK</td>
+</tr>
+<tr>
+<td>20.280</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_perception/u_tof_average/average_out_0_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>20.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>25</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 10.559, 58.692%; route: 7.088, 39.395%; tC2Q: 0.344, 1.913%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp4</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>2.001</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>18.279</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>20.280</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_perception/u_tof_average/s1_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_perception/u_tof_average/average_out_1_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>clk50M[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>clk50M[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>clk50M</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>clk50M_ibuf/I</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1658</td>
+<td>clk50M_ibuf/O</td>
+</tr>
+<tr>
+<td>0.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/s1_1_s0/CLK</td>
+</tr>
+<tr>
+<td>0.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/s1_1_s0/Q</td>
+</tr>
+<tr>
+<td>1.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n36_s/I1</td>
+</tr>
+<tr>
+<td>1.525</td>
+<td>0.506</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n36_s/COUT</td>
+</tr>
+<tr>
+<td>1.525</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n35_s/CIN</td>
+</tr>
+<tr>
+<td>1.745</td>
+<td>0.219</td>
+<td>tINS</td>
+<td>FR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n35_s/SUM</td>
+</tr>
+<tr>
+<td>2.082</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n107_s/I0</td>
+</tr>
+<tr>
+<td>2.583</td>
+<td>0.501</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n107_s/COUT</td>
+</tr>
+<tr>
+<td>2.583</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n106_s/CIN</td>
+</tr>
+<tr>
+<td>2.802</td>
+<td>0.219</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n106_s/SUM</td>
+</tr>
+<tr>
+<td>3.140</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n106_s0/I0</td>
+</tr>
+<tr>
+<td>3.640</td>
+<td>0.501</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n106_s0/COUT</td>
+</tr>
+<tr>
+<td>3.640</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n105_s0/CIN</td>
+</tr>
+<tr>
+<td>3.685</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n105_s0/COUT</td>
+</tr>
+<tr>
+<td>3.685</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n104_s0/CIN</td>
+</tr>
+<tr>
+<td>3.730</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n104_s0/COUT</td>
+</tr>
+<tr>
+<td>3.730</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n103_s0/CIN</td>
+</tr>
+<tr>
+<td>3.775</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n103_s0/COUT</td>
+</tr>
+<tr>
+<td>3.775</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n102_s0/CIN</td>
+</tr>
+<tr>
+<td>3.820</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n102_s0/COUT</td>
+</tr>
+<tr>
+<td>3.820</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n101_s0/CIN</td>
+</tr>
+<tr>
+<td>3.865</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n101_s0/COUT</td>
+</tr>
+<tr>
+<td>3.865</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n100_s0/CIN</td>
+</tr>
+<tr>
+<td>3.910</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n100_s0/COUT</td>
+</tr>
+<tr>
+<td>3.910</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n99_s0/CIN</td>
+</tr>
+<tr>
+<td>3.955</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n99_s0/COUT</td>
+</tr>
+<tr>
+<td>3.955</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n98_s0/CIN</td>
+</tr>
+<tr>
+<td>4.000</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n98_s0/COUT</td>
+</tr>
+<tr>
+<td>4.000</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n97_s0/CIN</td>
+</tr>
+<tr>
+<td>4.045</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n97_s0/COUT</td>
+</tr>
+<tr>
+<td>4.045</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n96_s0/CIN</td>
+</tr>
+<tr>
+<td>4.090</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n96_s0/COUT</td>
+</tr>
+<tr>
+<td>4.090</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n95_s0/CIN</td>
+</tr>
+<tr>
+<td>4.135</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n95_s0/COUT</td>
+</tr>
+<tr>
+<td>4.135</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n94_s0/CIN</td>
+</tr>
+<tr>
+<td>4.181</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n94_s0/COUT</td>
+</tr>
+<tr>
+<td>4.181</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n93_s0/CIN</td>
+</tr>
+<tr>
+<td>4.400</td>
+<td>0.219</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n93_s0/SUM</td>
+</tr>
+<tr>
+<td>4.737</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n188_s11/I1</td>
+</tr>
+<tr>
+<td>5.202</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n188_s11/F</td>
+</tr>
+<tr>
+<td>5.540</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n188_s5/I1</td>
+</tr>
+<tr>
+<td>6.004</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>u_perception/u_tof_average/n188_s5/F</td>
+</tr>
+<tr>
+<td>6.342</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n192_s2/I1</td>
+</tr>
+<tr>
+<td>6.806</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>u_perception/u_tof_average/n192_s2/F</td>
+</tr>
+<tr>
+<td>7.144</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n196_s4/I0</td>
+</tr>
+<tr>
+<td>7.617</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>7</td>
+<td>u_perception/u_tof_average/n196_s4/F</td>
+</tr>
+<tr>
+<td>7.955</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n200_s7/I0</td>
+</tr>
+<tr>
+<td>8.429</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n200_s7/F</td>
+</tr>
+<tr>
+<td>8.766</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s10/I0</td>
+</tr>
+<tr>
+<td>9.240</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s10/F</td>
+</tr>
+<tr>
+<td>9.577</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s7/I1</td>
+</tr>
+<tr>
+<td>10.042</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s7/F</td>
+</tr>
+<tr>
+<td>10.379</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s4/I0</td>
+</tr>
+<tr>
+<td>10.853</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n202_s4/F</td>
+</tr>
+<tr>
+<td>11.190</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s1/I2</td>
+</tr>
+<tr>
+<td>11.605</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n202_s1/F</td>
+</tr>
+<tr>
+<td>11.943</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n204_s1/I2</td>
+</tr>
+<tr>
+<td>12.358</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_perception/u_tof_average/n204_s1/F</td>
+</tr>
+<tr>
+<td>12.696</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n208_s4/I1</td>
+</tr>
+<tr>
+<td>13.160</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n208_s4/F</td>
+</tr>
+<tr>
+<td>13.498</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n208_s1/I1</td>
+</tr>
+<tr>
+<td>13.962</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_perception/u_tof_average/n208_s1/F</td>
+</tr>
+<tr>
+<td>14.300</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n212_s4/I1</td>
+</tr>
+<tr>
+<td>14.764</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n212_s4/F</td>
+</tr>
+<tr>
+<td>15.102</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n212_s1/I1</td>
+</tr>
+<tr>
+<td>15.567</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_perception/u_tof_average/n212_s1/F</td>
+</tr>
+<tr>
+<td>15.904</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n214_s1/I2</td>
+</tr>
+<tr>
+<td>16.319</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_perception/u_tof_average/n214_s1/F</td>
+</tr>
+<tr>
+<td>16.657</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n216_s1/I0</td>
+</tr>
+<tr>
+<td>17.130</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n216_s1/F</td>
+</tr>
+<tr>
+<td>17.468</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n216_s0/I0</td>
+</tr>
+<tr>
+<td>17.941</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n216_s0/F</td>
+</tr>
+<tr>
+<td>18.279</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/average_out_1_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>20.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>clk50M</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>clk50M_ibuf/I</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1658</td>
+<td>clk50M_ibuf/O</td>
+</tr>
+<tr>
+<td>20.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/average_out_1_s0/CLK</td>
+</tr>
+<tr>
+<td>20.280</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_perception/u_tof_average/average_out_1_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>20.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>25</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 10.510, 58.578%; route: 7.088, 39.503%; tC2Q: 0.344, 1.919%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp5</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>2.480</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>11.459</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>13.940</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_camera_display/disp_driver/hcount_r_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_camera_display/u_sensor_osd/glyph_x_a_3_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>453</td>
+<td>u_camera_display/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/disp_driver/hcount_r_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>14</td>
+<td>u_camera_display/disp_driver/hcount_r_0_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/disp_driver/n79_s3/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/disp_driver/n79_s3/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n904_s21/I3</td>
+</tr>
+<tr>
+<td>2.393</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>u_camera_display/u_sensor_osd/n904_s21/F</td>
+</tr>
+<tr>
+<td>2.730</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n742_s14/I2</td>
+</tr>
+<tr>
+<td>3.145</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n742_s14/F</td>
+</tr>
+<tr>
+<td>3.483</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n742_s8/I0</td>
+</tr>
+<tr>
+<td>3.957</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>u_camera_display/u_sensor_osd/n742_s8/F</td>
+</tr>
+<tr>
+<td>4.294</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n978_s7/I0</td>
+</tr>
+<tr>
+<td>4.768</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>10</td>
+<td>u_camera_display/u_sensor_osd/n978_s7/F</td>
+</tr>
+<tr>
+<td>5.105</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n902_s21/I0</td>
+</tr>
+<tr>
+<td>5.579</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n902_s21/F</td>
+</tr>
+<tr>
+<td>5.916</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n902_s23/I1</td>
+</tr>
+<tr>
+<td>6.381</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>u_camera_display/u_sensor_osd/n902_s23/F</td>
+</tr>
+<tr>
+<td>6.719</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s21/I2</td>
+</tr>
+<tr>
+<td>7.134</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s21/F</td>
+</tr>
+<tr>
+<td>7.471</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s16/I2</td>
+</tr>
+<tr>
+<td>7.886</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s16/F</td>
+</tr>
+<tr>
+<td>8.224</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s15/I0</td>
+</tr>
+<tr>
+<td>8.697</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_camera_display/u_sensor_osd/n903_s15/F</td>
+</tr>
+<tr>
+<td>9.035</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n905_s36/I1</td>
+</tr>
+<tr>
+<td>9.500</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n905_s36/F</td>
+</tr>
+<tr>
+<td>9.837</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n979_s7/I0</td>
+</tr>
+<tr>
+<td>10.311</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n979_s7/F</td>
+</tr>
+<tr>
+<td>10.648</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n978_s8/I0</td>
+</tr>
+<tr>
+<td>11.122</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n978_s8/F</td>
+</tr>
+<tr>
+<td>11.459</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/glyph_x_a_3_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.333</td>
+<td>13.333</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.333</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.660</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>453</td>
+<td>u_camera_display/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>13.997</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/glyph_x_a_3_s0/CLK</td>
+</tr>
+<tr>
+<td>13.940</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/glyph_x_a_3_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.333</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>14</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.726, 53.043%; route: 4.725, 43.768%; tC2Q: 0.344, 3.189%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp6</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>2.489</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>11.450</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>13.940</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_camera_display/disp_driver/hcount_r_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_camera_display/u_sensor_osd/glyph_x_a_2_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>453</td>
+<td>u_camera_display/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/disp_driver/hcount_r_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>14</td>
+<td>u_camera_display/disp_driver/hcount_r_0_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/disp_driver/n79_s3/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/disp_driver/n79_s3/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n904_s21/I3</td>
+</tr>
+<tr>
+<td>2.393</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>u_camera_display/u_sensor_osd/n904_s21/F</td>
+</tr>
+<tr>
+<td>2.730</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n742_s14/I2</td>
+</tr>
+<tr>
+<td>3.145</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n742_s14/F</td>
+</tr>
+<tr>
+<td>3.483</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n742_s8/I0</td>
+</tr>
+<tr>
+<td>3.957</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>u_camera_display/u_sensor_osd/n742_s8/F</td>
+</tr>
+<tr>
+<td>4.294</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n978_s7/I0</td>
+</tr>
+<tr>
+<td>4.768</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>10</td>
+<td>u_camera_display/u_sensor_osd/n978_s7/F</td>
+</tr>
+<tr>
+<td>5.105</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n902_s21/I0</td>
+</tr>
+<tr>
+<td>5.579</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n902_s21/F</td>
+</tr>
+<tr>
+<td>5.916</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n902_s23/I1</td>
+</tr>
+<tr>
+<td>6.381</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>u_camera_display/u_sensor_osd/n902_s23/F</td>
+</tr>
+<tr>
+<td>6.719</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s21/I2</td>
+</tr>
+<tr>
+<td>7.134</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s21/F</td>
+</tr>
+<tr>
+<td>7.471</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s16/I2</td>
+</tr>
+<tr>
+<td>7.886</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s16/F</td>
+</tr>
+<tr>
+<td>8.224</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s15/I0</td>
+</tr>
+<tr>
+<td>8.697</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_camera_display/u_sensor_osd/n903_s15/F</td>
+</tr>
+<tr>
+<td>9.035</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n905_s36/I1</td>
+</tr>
+<tr>
+<td>9.500</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n905_s36/F</td>
+</tr>
+<tr>
+<td>9.837</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n979_s7/I0</td>
+</tr>
+<tr>
+<td>10.311</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n979_s7/F</td>
+</tr>
+<tr>
+<td>10.648</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n979_s5/I1</td>
+</tr>
+<tr>
+<td>11.113</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n979_s5/F</td>
+</tr>
+<tr>
+<td>11.450</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/glyph_x_a_2_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.333</td>
+<td>13.333</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.333</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.660</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>453</td>
+<td>u_camera_display/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>13.997</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/glyph_x_a_2_s0/CLK</td>
+</tr>
+<tr>
+<td>13.940</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/glyph_x_a_2_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.333</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>14</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.717, 53.004%; route: 4.725, 43.805%; tC2Q: 0.344, 3.191%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp7</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>2.718</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>11.222</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>13.940</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_camera_display/disp_driver/hcount_r_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_camera_display/u_sensor_osd/glyph_x_a_1_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>453</td>
+<td>u_camera_display/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/disp_driver/hcount_r_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>14</td>
+<td>u_camera_display/disp_driver/hcount_r_0_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/disp_driver/n79_s3/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/disp_driver/n79_s3/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n904_s21/I3</td>
+</tr>
+<tr>
+<td>2.393</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>u_camera_display/u_sensor_osd/n904_s21/F</td>
+</tr>
+<tr>
+<td>2.730</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n742_s14/I2</td>
+</tr>
+<tr>
+<td>3.145</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n742_s14/F</td>
+</tr>
+<tr>
+<td>3.483</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n742_s8/I0</td>
+</tr>
+<tr>
+<td>3.957</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>u_camera_display/u_sensor_osd/n742_s8/F</td>
+</tr>
+<tr>
+<td>4.294</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n978_s7/I0</td>
+</tr>
+<tr>
+<td>4.768</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>10</td>
+<td>u_camera_display/u_sensor_osd/n978_s7/F</td>
+</tr>
+<tr>
+<td>5.105</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n902_s21/I0</td>
+</tr>
+<tr>
+<td>5.579</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n902_s21/F</td>
+</tr>
+<tr>
+<td>5.916</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n902_s23/I1</td>
+</tr>
+<tr>
+<td>6.381</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>u_camera_display/u_sensor_osd/n902_s23/F</td>
+</tr>
+<tr>
+<td>6.719</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s21/I2</td>
+</tr>
+<tr>
+<td>7.134</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s21/F</td>
+</tr>
+<tr>
+<td>7.471</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s16/I2</td>
+</tr>
+<tr>
+<td>7.886</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s16/F</td>
+</tr>
+<tr>
+<td>8.224</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s15/I0</td>
+</tr>
+<tr>
+<td>8.697</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_camera_display/u_sensor_osd/n903_s15/F</td>
+</tr>
+<tr>
+<td>9.035</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n904_s13/I0</td>
+</tr>
+<tr>
+<td>9.509</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_camera_display/u_sensor_osd/n904_s13/F</td>
+</tr>
+<tr>
+<td>9.846</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n905_s34/I1</td>
+</tr>
+<tr>
+<td>10.311</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n905_s34/F</td>
+</tr>
+<tr>
+<td>10.648</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n980_s5/I3</td>
+</tr>
+<tr>
+<td>10.884</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n980_s5/F</td>
+</tr>
+<tr>
+<td>11.222</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/glyph_x_a_1_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.333</td>
+<td>13.333</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.333</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.660</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>453</td>
+<td>u_camera_display/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>13.997</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/glyph_x_a_1_s0/CLK</td>
+</tr>
+<tr>
+<td>13.940</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/glyph_x_a_1_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.333</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>14</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.489, 51.987%; route: 4.725, 44.752%; tC2Q: 0.344, 3.261%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp8</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>2.812</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>17.468</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>20.280</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_perception/u_tof_average/s1_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_perception/u_tof_average/average_out_2_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>clk50M[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>clk50M[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>clk50M</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>clk50M_ibuf/I</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1658</td>
+<td>clk50M_ibuf/O</td>
+</tr>
+<tr>
+<td>0.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/s1_1_s0/CLK</td>
+</tr>
+<tr>
+<td>0.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/s1_1_s0/Q</td>
+</tr>
+<tr>
+<td>1.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n36_s/I1</td>
+</tr>
+<tr>
+<td>1.525</td>
+<td>0.506</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n36_s/COUT</td>
+</tr>
+<tr>
+<td>1.525</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n35_s/CIN</td>
+</tr>
+<tr>
+<td>1.745</td>
+<td>0.219</td>
+<td>tINS</td>
+<td>FR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n35_s/SUM</td>
+</tr>
+<tr>
+<td>2.082</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n107_s/I0</td>
+</tr>
+<tr>
+<td>2.583</td>
+<td>0.501</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n107_s/COUT</td>
+</tr>
+<tr>
+<td>2.583</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n106_s/CIN</td>
+</tr>
+<tr>
+<td>2.802</td>
+<td>0.219</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n106_s/SUM</td>
+</tr>
+<tr>
+<td>3.140</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n106_s0/I0</td>
+</tr>
+<tr>
+<td>3.640</td>
+<td>0.501</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n106_s0/COUT</td>
+</tr>
+<tr>
+<td>3.640</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n105_s0/CIN</td>
+</tr>
+<tr>
+<td>3.685</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n105_s0/COUT</td>
+</tr>
+<tr>
+<td>3.685</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n104_s0/CIN</td>
+</tr>
+<tr>
+<td>3.730</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n104_s0/COUT</td>
+</tr>
+<tr>
+<td>3.730</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n103_s0/CIN</td>
+</tr>
+<tr>
+<td>3.775</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n103_s0/COUT</td>
+</tr>
+<tr>
+<td>3.775</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n102_s0/CIN</td>
+</tr>
+<tr>
+<td>3.820</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n102_s0/COUT</td>
+</tr>
+<tr>
+<td>3.820</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n101_s0/CIN</td>
+</tr>
+<tr>
+<td>3.865</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n101_s0/COUT</td>
+</tr>
+<tr>
+<td>3.865</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n100_s0/CIN</td>
+</tr>
+<tr>
+<td>3.910</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n100_s0/COUT</td>
+</tr>
+<tr>
+<td>3.910</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n99_s0/CIN</td>
+</tr>
+<tr>
+<td>3.955</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n99_s0/COUT</td>
+</tr>
+<tr>
+<td>3.955</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n98_s0/CIN</td>
+</tr>
+<tr>
+<td>4.000</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n98_s0/COUT</td>
+</tr>
+<tr>
+<td>4.000</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n97_s0/CIN</td>
+</tr>
+<tr>
+<td>4.045</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n97_s0/COUT</td>
+</tr>
+<tr>
+<td>4.045</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n96_s0/CIN</td>
+</tr>
+<tr>
+<td>4.090</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n96_s0/COUT</td>
+</tr>
+<tr>
+<td>4.090</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n95_s0/CIN</td>
+</tr>
+<tr>
+<td>4.135</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n95_s0/COUT</td>
+</tr>
+<tr>
+<td>4.135</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n94_s0/CIN</td>
+</tr>
+<tr>
+<td>4.181</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n94_s0/COUT</td>
+</tr>
+<tr>
+<td>4.181</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n93_s0/CIN</td>
+</tr>
+<tr>
+<td>4.400</td>
+<td>0.219</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n93_s0/SUM</td>
+</tr>
+<tr>
+<td>4.737</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n188_s11/I1</td>
+</tr>
+<tr>
+<td>5.202</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n188_s11/F</td>
+</tr>
+<tr>
+<td>5.540</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n188_s5/I1</td>
+</tr>
+<tr>
+<td>6.004</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>u_perception/u_tof_average/n188_s5/F</td>
+</tr>
+<tr>
+<td>6.342</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n192_s2/I1</td>
+</tr>
+<tr>
+<td>6.806</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>u_perception/u_tof_average/n192_s2/F</td>
+</tr>
+<tr>
+<td>7.144</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n196_s4/I0</td>
+</tr>
+<tr>
+<td>7.617</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>7</td>
+<td>u_perception/u_tof_average/n196_s4/F</td>
+</tr>
+<tr>
+<td>7.955</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n200_s7/I0</td>
+</tr>
+<tr>
+<td>8.429</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n200_s7/F</td>
+</tr>
+<tr>
+<td>8.766</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s10/I0</td>
+</tr>
+<tr>
+<td>9.240</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s10/F</td>
+</tr>
+<tr>
+<td>9.577</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s7/I1</td>
+</tr>
+<tr>
+<td>10.042</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s7/F</td>
+</tr>
+<tr>
+<td>10.379</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s4/I0</td>
+</tr>
+<tr>
+<td>10.853</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n202_s4/F</td>
+</tr>
+<tr>
+<td>11.190</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s1/I2</td>
+</tr>
+<tr>
+<td>11.605</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n202_s1/F</td>
+</tr>
+<tr>
+<td>11.943</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n204_s1/I2</td>
+</tr>
+<tr>
+<td>12.358</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_perception/u_tof_average/n204_s1/F</td>
+</tr>
+<tr>
+<td>12.696</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n206_s1/I2</td>
+</tr>
+<tr>
+<td>13.111</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_perception/u_tof_average/n206_s1/F</td>
+</tr>
+<tr>
+<td>13.448</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n210_s4/I1</td>
+</tr>
+<tr>
+<td>13.913</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n210_s4/F</td>
+</tr>
+<tr>
+<td>14.250</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n210_s1/I1</td>
+</tr>
+<tr>
+<td>14.715</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_perception/u_tof_average/n210_s1/F</td>
+</tr>
+<tr>
+<td>15.052</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n214_s4/I1</td>
+</tr>
+<tr>
+<td>15.517</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n214_s4/F</td>
+</tr>
+<tr>
+<td>15.855</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n214_s1/I1</td>
+</tr>
+<tr>
+<td>16.319</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_perception/u_tof_average/n214_s1/F</td>
+</tr>
+<tr>
+<td>16.657</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n214_s0/I0</td>
+</tr>
+<tr>
+<td>17.130</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n214_s0/F</td>
+</tr>
+<tr>
+<td>17.468</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/average_out_2_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>20.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>clk50M</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>clk50M_ibuf/I</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1658</td>
+<td>clk50M_ibuf/O</td>
+</tr>
+<tr>
+<td>20.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/average_out_2_s0/CLK</td>
+</tr>
+<tr>
+<td>20.280</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_perception/u_tof_average/average_out_2_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>20.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>24</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 10.036, 58.586%; route: 6.750, 39.404%; tC2Q: 0.344, 2.010%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp9</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>2.948</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>17.332</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>20.280</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_perception/u_imu_parser/angle_valid_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_perception/u_yaw_filter/angle_out_cdeg_15_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>clk50M[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>clk50M[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>clk50M</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>clk50M_ibuf/I</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1658</td>
+<td>clk50M_ibuf/O</td>
+</tr>
+<tr>
+<td>0.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_imu_parser/angle_valid_s0/CLK</td>
+</tr>
+<tr>
+<td>0.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>49</td>
+<td>u_perception/u_imu_parser/angle_valid_s0/Q</td>
+</tr>
+<tr>
+<td>1.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/yaw_cdeg_selected_0_s0/I2</td>
+</tr>
+<tr>
+<td>1.434</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/yaw_cdeg_selected_0_s0/F</td>
+</tr>
+<tr>
+<td>1.772</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_yaw_filter/difference_0_s/I0</td>
+</tr>
+<tr>
+<td>2.272</td>
+<td>0.501</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_0_s/COUT</td>
+</tr>
+<tr>
+<td>2.272</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_perception/u_yaw_filter/difference_1_s/CIN</td>
+</tr>
+<tr>
+<td>2.492</td>
+<td>0.219</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_1_s/SUM</td>
+</tr>
+<tr>
+<td>2.829</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_6_s6/I1</td>
+</tr>
+<tr>
+<td>3.294</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_6_s6/F</td>
+</tr>
+<tr>
+<td>3.631</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_6_s4/I0</td>
+</tr>
+<tr>
+<td>4.105</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_6_s4/F</td>
+</tr>
+<tr>
+<td>4.443</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_6_s3/I2</td>
+</tr>
+<tr>
+<td>4.858</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_6_s3/F</td>
+</tr>
+<tr>
+<td>5.195</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_6_s2/I3</td>
+</tr>
+<tr>
+<td>5.431</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_6_s2/F</td>
+</tr>
+<tr>
+<td>5.769</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_6_s1/I0</td>
+</tr>
+<tr>
+<td>6.243</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>7</td>
+<td>u_perception/u_yaw_filter/difference_6_s1/F</td>
+</tr>
+<tr>
+<td>6.580</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_7_s1/I0</td>
+</tr>
+<tr>
+<td>7.054</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_7_s1/F</td>
+</tr>
+<tr>
+<td>7.391</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_7_s0/I0</td>
+</tr>
+<tr>
+<td>7.865</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_7_s0/F</td>
+</tr>
+<tr>
+<td>8.202</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_yaw_filter/n103_s/I1</td>
+</tr>
+<tr>
+<td>8.709</td>
+<td>0.506</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n103_s/COUT</td>
+</tr>
+<tr>
+<td>8.709</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_perception/u_yaw_filter/n102_s/CIN</td>
+</tr>
+<tr>
+<td>8.928</td>
+<td>0.219</td>
+<td>tINS</td>
+<td>FR</td>
+<td>8</td>
+<td>u_perception/u_yaw_filter/n102_s/SUM</td>
+</tr>
+<tr>
+<td>9.266</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n170_s5/I1</td>
+</tr>
+<tr>
+<td>9.730</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_yaw_filter/n170_s5/F</td>
+</tr>
+<tr>
+<td>10.068</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n166_s8/I3</td>
+</tr>
+<tr>
+<td>10.304</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n166_s8/F</td>
+</tr>
+<tr>
+<td>10.641</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n166_s6/I0</td>
+</tr>
+<tr>
+<td>11.115</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n166_s6/F</td>
+</tr>
+<tr>
+<td>11.452</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n166_s4/I0</td>
+</tr>
+<tr>
+<td>11.926</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n166_s4/F</td>
+</tr>
+<tr>
+<td>12.264</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n166_s2/I0</td>
+</tr>
+<tr>
+<td>12.737</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>7</td>
+<td>u_perception/u_yaw_filter/n166_s2/F</td>
+</tr>
+<tr>
+<td>13.075</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n170_s2/I3</td>
+</tr>
+<tr>
+<td>13.311</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_perception/u_yaw_filter/n170_s2/F</td>
+</tr>
+<tr>
+<td>13.648</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n169_s2/I3</td>
+</tr>
+<tr>
+<td>13.885</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_perception/u_yaw_filter/n169_s2/F</td>
+</tr>
+<tr>
+<td>14.222</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n167_s3/I1</td>
+</tr>
+<tr>
+<td>14.687</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n167_s3/F</td>
+</tr>
+<tr>
+<td>15.024</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n167_s4/I2</td>
+</tr>
+<tr>
+<td>15.439</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_yaw_filter/n167_s4/F</td>
+</tr>
+<tr>
+<td>15.777</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n166_s1/I2</td>
+</tr>
+<tr>
+<td>16.192</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n166_s1/F</td>
+</tr>
+<tr>
+<td>16.530</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n166_s0/I1</td>
+</tr>
+<tr>
+<td>16.994</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n166_s0/F</td>
+</tr>
+<tr>
+<td>17.332</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/angle_out_cdeg_15_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>20.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>clk50M</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>clk50M_ibuf/I</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1658</td>
+<td>clk50M_ibuf/O</td>
+</tr>
+<tr>
+<td>20.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/angle_out_cdeg_15_s0/CLK</td>
+</tr>
+<tr>
+<td>20.280</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/angle_out_cdeg_15_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>20.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>24</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 9.225, 54.283%; route: 7.425, 43.691%; tC2Q: 0.344, 2.026%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp10</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>3.292</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>10.648</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>13.940</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_camera_display/disp_driver/hcount_r_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_camera_display/u_sensor_osd/text_col_a_0_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>453</td>
+<td>u_camera_display/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/disp_driver/hcount_r_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>14</td>
+<td>u_camera_display/disp_driver/hcount_r_0_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/disp_driver/n79_s3/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/disp_driver/n79_s3/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n904_s21/I3</td>
+</tr>
+<tr>
+<td>2.393</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>u_camera_display/u_sensor_osd/n904_s21/F</td>
+</tr>
+<tr>
+<td>2.730</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n742_s14/I2</td>
+</tr>
+<tr>
+<td>3.145</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n742_s14/F</td>
+</tr>
+<tr>
+<td>3.483</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n742_s8/I0</td>
+</tr>
+<tr>
+<td>3.957</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>u_camera_display/u_sensor_osd/n742_s8/F</td>
+</tr>
+<tr>
+<td>4.294</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n978_s7/I0</td>
+</tr>
+<tr>
+<td>4.768</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>10</td>
+<td>u_camera_display/u_sensor_osd/n978_s7/F</td>
+</tr>
+<tr>
+<td>5.105</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n902_s21/I0</td>
+</tr>
+<tr>
+<td>5.579</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n902_s21/F</td>
+</tr>
+<tr>
+<td>5.916</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n902_s23/I1</td>
+</tr>
+<tr>
+<td>6.381</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>u_camera_display/u_sensor_osd/n902_s23/F</td>
+</tr>
+<tr>
+<td>6.719</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s21/I2</td>
+</tr>
+<tr>
+<td>7.134</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s21/F</td>
+</tr>
+<tr>
+<td>7.471</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s16/I2</td>
+</tr>
+<tr>
+<td>7.886</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s16/F</td>
+</tr>
+<tr>
+<td>8.224</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s15/I0</td>
+</tr>
+<tr>
+<td>8.697</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_camera_display/u_sensor_osd/n903_s15/F</td>
+</tr>
+<tr>
+<td>9.035</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n904_s13/I0</td>
+</tr>
+<tr>
+<td>9.509</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_camera_display/u_sensor_osd/n904_s13/F</td>
+</tr>
+<tr>
+<td>9.846</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n905_s34/I1</td>
+</tr>
+<tr>
+<td>10.311</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n905_s34/F</td>
+</tr>
+<tr>
+<td>10.648</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/text_col_a_0_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.333</td>
+<td>13.333</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.333</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.660</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>453</td>
+<td>u_camera_display/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>13.997</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/text_col_a_0_s0/CLK</td>
+</tr>
+<tr>
+<td>13.940</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/text_col_a_0_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.333</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>13</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.253, 52.608%; route: 4.388, 43.944%; tC2Q: 0.344, 3.448%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp11</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>3.565</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>16.715</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>20.280</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_perception/u_tof_average/s1_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_perception/u_tof_average/average_out_3_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>clk50M[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>clk50M[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>clk50M</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>clk50M_ibuf/I</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1658</td>
+<td>clk50M_ibuf/O</td>
+</tr>
+<tr>
+<td>0.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/s1_1_s0/CLK</td>
+</tr>
+<tr>
+<td>0.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/s1_1_s0/Q</td>
+</tr>
+<tr>
+<td>1.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n36_s/I1</td>
+</tr>
+<tr>
+<td>1.525</td>
+<td>0.506</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n36_s/COUT</td>
+</tr>
+<tr>
+<td>1.525</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n35_s/CIN</td>
+</tr>
+<tr>
+<td>1.745</td>
+<td>0.219</td>
+<td>tINS</td>
+<td>FR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n35_s/SUM</td>
+</tr>
+<tr>
+<td>2.082</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n107_s/I0</td>
+</tr>
+<tr>
+<td>2.583</td>
+<td>0.501</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n107_s/COUT</td>
+</tr>
+<tr>
+<td>2.583</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n106_s/CIN</td>
+</tr>
+<tr>
+<td>2.802</td>
+<td>0.219</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n106_s/SUM</td>
+</tr>
+<tr>
+<td>3.140</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n106_s0/I0</td>
+</tr>
+<tr>
+<td>3.640</td>
+<td>0.501</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n106_s0/COUT</td>
+</tr>
+<tr>
+<td>3.640</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n105_s0/CIN</td>
+</tr>
+<tr>
+<td>3.685</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n105_s0/COUT</td>
+</tr>
+<tr>
+<td>3.685</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n104_s0/CIN</td>
+</tr>
+<tr>
+<td>3.730</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n104_s0/COUT</td>
+</tr>
+<tr>
+<td>3.730</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n103_s0/CIN</td>
+</tr>
+<tr>
+<td>3.775</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n103_s0/COUT</td>
+</tr>
+<tr>
+<td>3.775</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n102_s0/CIN</td>
+</tr>
+<tr>
+<td>3.820</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n102_s0/COUT</td>
+</tr>
+<tr>
+<td>3.820</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n101_s0/CIN</td>
+</tr>
+<tr>
+<td>3.865</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n101_s0/COUT</td>
+</tr>
+<tr>
+<td>3.865</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n100_s0/CIN</td>
+</tr>
+<tr>
+<td>3.910</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n100_s0/COUT</td>
+</tr>
+<tr>
+<td>3.910</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n99_s0/CIN</td>
+</tr>
+<tr>
+<td>3.955</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n99_s0/COUT</td>
+</tr>
+<tr>
+<td>3.955</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n98_s0/CIN</td>
+</tr>
+<tr>
+<td>4.000</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n98_s0/COUT</td>
+</tr>
+<tr>
+<td>4.000</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n97_s0/CIN</td>
+</tr>
+<tr>
+<td>4.045</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n97_s0/COUT</td>
+</tr>
+<tr>
+<td>4.045</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n96_s0/CIN</td>
+</tr>
+<tr>
+<td>4.090</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n96_s0/COUT</td>
+</tr>
+<tr>
+<td>4.090</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n95_s0/CIN</td>
+</tr>
+<tr>
+<td>4.135</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n95_s0/COUT</td>
+</tr>
+<tr>
+<td>4.135</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n94_s0/CIN</td>
+</tr>
+<tr>
+<td>4.181</td>
+<td>0.045</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n94_s0/COUT</td>
+</tr>
+<tr>
+<td>4.181</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n93_s0/CIN</td>
+</tr>
+<tr>
+<td>4.400</td>
+<td>0.219</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n93_s0/SUM</td>
+</tr>
+<tr>
+<td>4.737</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n188_s11/I1</td>
+</tr>
+<tr>
+<td>5.202</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n188_s11/F</td>
+</tr>
+<tr>
+<td>5.540</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n188_s5/I1</td>
+</tr>
+<tr>
+<td>6.004</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>u_perception/u_tof_average/n188_s5/F</td>
+</tr>
+<tr>
+<td>6.342</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n192_s2/I1</td>
+</tr>
+<tr>
+<td>6.806</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>u_perception/u_tof_average/n192_s2/F</td>
+</tr>
+<tr>
+<td>7.144</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n196_s4/I0</td>
+</tr>
+<tr>
+<td>7.617</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>7</td>
+<td>u_perception/u_tof_average/n196_s4/F</td>
+</tr>
+<tr>
+<td>7.955</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n200_s7/I0</td>
+</tr>
+<tr>
+<td>8.429</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n200_s7/F</td>
+</tr>
+<tr>
+<td>8.766</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s10/I0</td>
+</tr>
+<tr>
+<td>9.240</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s10/F</td>
+</tr>
+<tr>
+<td>9.577</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s7/I1</td>
+</tr>
+<tr>
+<td>10.042</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s7/F</td>
+</tr>
+<tr>
+<td>10.379</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s4/I0</td>
+</tr>
+<tr>
+<td>10.853</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n202_s4/F</td>
+</tr>
+<tr>
+<td>11.190</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n202_s1/I2</td>
+</tr>
+<tr>
+<td>11.605</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_tof_average/n202_s1/F</td>
+</tr>
+<tr>
+<td>11.943</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n204_s1/I2</td>
+</tr>
+<tr>
+<td>12.358</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_perception/u_tof_average/n204_s1/F</td>
+</tr>
+<tr>
+<td>12.696</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n208_s4/I1</td>
+</tr>
+<tr>
+<td>13.160</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n208_s4/F</td>
+</tr>
+<tr>
+<td>13.498</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n208_s1/I1</td>
+</tr>
+<tr>
+<td>13.962</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_perception/u_tof_average/n208_s1/F</td>
+</tr>
+<tr>
+<td>14.300</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n212_s4/I1</td>
+</tr>
+<tr>
+<td>14.764</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n212_s4/F</td>
+</tr>
+<tr>
+<td>15.102</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n212_s1/I1</td>
+</tr>
+<tr>
+<td>15.567</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_perception/u_tof_average/n212_s1/F</td>
+</tr>
+<tr>
+<td>15.904</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n212_s0/I0</td>
+</tr>
+<tr>
+<td>16.378</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/n212_s0/F</td>
+</tr>
+<tr>
+<td>16.715</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/average_out_3_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>20.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>clk50M</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>clk50M_ibuf/I</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1658</td>
+<td>clk50M_ibuf/O</td>
+</tr>
+<tr>
+<td>20.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_tof_average/average_out_3_s0/CLK</td>
+</tr>
+<tr>
+<td>20.280</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_perception/u_tof_average/average_out_3_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>20.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>23</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 9.621, 58.744%; route: 6.413, 39.154%; tC2Q: 0.344, 2.102%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp12</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>3.751</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>16.530</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>20.280</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_perception/u_imu_parser/angle_valid_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_perception/u_yaw_filter/angle_out_cdeg_14_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>clk50M[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>clk50M[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>clk50M</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>clk50M_ibuf/I</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1658</td>
+<td>clk50M_ibuf/O</td>
+</tr>
+<tr>
+<td>0.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_imu_parser/angle_valid_s0/CLK</td>
+</tr>
+<tr>
+<td>0.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>49</td>
+<td>u_perception/u_imu_parser/angle_valid_s0/Q</td>
+</tr>
+<tr>
+<td>1.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/yaw_cdeg_selected_0_s0/I2</td>
+</tr>
+<tr>
+<td>1.434</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/yaw_cdeg_selected_0_s0/F</td>
+</tr>
+<tr>
+<td>1.772</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_yaw_filter/difference_0_s/I0</td>
+</tr>
+<tr>
+<td>2.272</td>
+<td>0.501</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_0_s/COUT</td>
+</tr>
+<tr>
+<td>2.272</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_perception/u_yaw_filter/difference_1_s/CIN</td>
+</tr>
+<tr>
+<td>2.492</td>
+<td>0.219</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_1_s/SUM</td>
+</tr>
+<tr>
+<td>2.829</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_6_s6/I1</td>
+</tr>
+<tr>
+<td>3.294</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_6_s6/F</td>
+</tr>
+<tr>
+<td>3.631</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_6_s4/I0</td>
+</tr>
+<tr>
+<td>4.105</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_6_s4/F</td>
+</tr>
+<tr>
+<td>4.443</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_6_s3/I2</td>
+</tr>
+<tr>
+<td>4.858</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_6_s3/F</td>
+</tr>
+<tr>
+<td>5.195</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_6_s2/I3</td>
+</tr>
+<tr>
+<td>5.431</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_6_s2/F</td>
+</tr>
+<tr>
+<td>5.769</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_6_s1/I0</td>
+</tr>
+<tr>
+<td>6.243</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>7</td>
+<td>u_perception/u_yaw_filter/difference_6_s1/F</td>
+</tr>
+<tr>
+<td>6.580</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_7_s1/I0</td>
+</tr>
+<tr>
+<td>7.054</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_7_s1/F</td>
+</tr>
+<tr>
+<td>7.391</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_7_s0/I0</td>
+</tr>
+<tr>
+<td>7.865</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/difference_7_s0/F</td>
+</tr>
+<tr>
+<td>8.202</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_yaw_filter/n103_s/I1</td>
+</tr>
+<tr>
+<td>8.709</td>
+<td>0.506</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n103_s/COUT</td>
+</tr>
+<tr>
+<td>8.709</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_perception/u_yaw_filter/n102_s/CIN</td>
+</tr>
+<tr>
+<td>8.928</td>
+<td>0.219</td>
+<td>tINS</td>
+<td>FR</td>
+<td>8</td>
+<td>u_perception/u_yaw_filter/n102_s/SUM</td>
+</tr>
+<tr>
+<td>9.266</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n170_s5/I1</td>
+</tr>
+<tr>
+<td>9.730</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_yaw_filter/n170_s5/F</td>
+</tr>
+<tr>
+<td>10.068</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n166_s8/I3</td>
+</tr>
+<tr>
+<td>10.304</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n166_s8/F</td>
+</tr>
+<tr>
+<td>10.641</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n166_s6/I0</td>
+</tr>
+<tr>
+<td>11.115</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n166_s6/F</td>
+</tr>
+<tr>
+<td>11.452</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n166_s4/I0</td>
+</tr>
+<tr>
+<td>11.926</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n166_s4/F</td>
+</tr>
+<tr>
+<td>12.264</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n166_s2/I0</td>
+</tr>
+<tr>
+<td>12.737</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>7</td>
+<td>u_perception/u_yaw_filter/n166_s2/F</td>
+</tr>
+<tr>
+<td>13.075</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n170_s2/I3</td>
+</tr>
+<tr>
+<td>13.311</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_perception/u_yaw_filter/n170_s2/F</td>
+</tr>
+<tr>
+<td>13.648</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n169_s2/I3</td>
+</tr>
+<tr>
+<td>13.885</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_perception/u_yaw_filter/n169_s2/F</td>
+</tr>
+<tr>
+<td>14.222</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n167_s3/I1</td>
+</tr>
+<tr>
+<td>14.687</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n167_s3/F</td>
+</tr>
+<tr>
+<td>15.024</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n167_s4/I2</td>
+</tr>
+<tr>
+<td>15.439</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_perception/u_yaw_filter/n167_s4/F</td>
+</tr>
+<tr>
+<td>15.777</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n167_s0/I2</td>
+</tr>
+<tr>
+<td>16.192</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/n167_s0/F</td>
+</tr>
+<tr>
+<td>16.530</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/angle_out_cdeg_14_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>20.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>clk50M</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>clk50M_ibuf/I</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1658</td>
+<td>clk50M_ibuf/O</td>
+</tr>
+<tr>
+<td>20.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/angle_out_cdeg_14_s0/CLK</td>
+</tr>
+<tr>
+<td>20.280</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_perception/u_yaw_filter/angle_out_cdeg_14_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>20.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>23</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 8.760, 54.103%; route: 7.088, 43.771%; tC2Q: 0.344, 2.126%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp13</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>3.986</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>9.954</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>13.940</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_camera_display/u_sensor_osd/glyph_y_b_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_camera_display/u_sensor_osd/blue_out_3_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>453</td>
+<td>u_camera_display/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/glyph_y_b_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>36</td>
+<td>u_camera_display/u_sensor_osd/glyph_y_b_0_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n1877_s8/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n1877_s8/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s110/I0</td>
+</tr>
+<tr>
+<td>2.630</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s110/F</td>
+</tr>
+<tr>
+<td>2.968</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s108/I0</td>
+</tr>
+<tr>
+<td>3.441</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s108/F</td>
+</tr>
+<tr>
+<td>3.779</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s91/I3</td>
+</tr>
+<tr>
+<td>4.015</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s91/F</td>
+</tr>
+<tr>
+<td>4.353</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s49/I2</td>
+</tr>
+<tr>
+<td>4.768</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s49/F</td>
+</tr>
+<tr>
+<td>5.105</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s21/I3</td>
+</tr>
+<tr>
+<td>5.341</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s21/F</td>
+</tr>
+<tr>
+<td>5.679</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s10/I2</td>
+</tr>
+<tr>
+<td>6.094</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s10/F</td>
+</tr>
+<tr>
+<td>6.432</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s6/I0</td>
+</tr>
+<tr>
+<td>6.905</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s6/F</td>
+</tr>
+<tr>
+<td>7.243</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s3/I3</td>
+</tr>
+<tr>
+<td>7.479</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n2235_s3/F</td>
+</tr>
+<tr>
+<td>7.816</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s2/I0</td>
+</tr>
+<tr>
+<td>8.290</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>10</td>
+<td>u_camera_display/u_sensor_osd/n2235_s2/F</td>
+</tr>
+<tr>
+<td>8.628</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2236_s2/I3</td>
+</tr>
+<tr>
+<td>8.864</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n2236_s2/F</td>
+</tr>
+<tr>
+<td>9.201</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2238_s1/I2</td>
+</tr>
+<tr>
+<td>9.616</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2238_s1/F</td>
+</tr>
+<tr>
+<td>9.954</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/blue_out_3_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.333</td>
+<td>13.333</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.333</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.660</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>453</td>
+<td>u_camera_display/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>13.997</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/blue_out_3_s0/CLK</td>
+</tr>
+<tr>
+<td>13.940</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/blue_out_3_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.333</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>13</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 4.558, 49.068%; route: 4.388, 47.227%; tC2Q: 0.344, 3.705%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp14</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>3.986</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>9.954</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>13.940</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_camera_display/u_sensor_osd/glyph_y_b_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_camera_display/u_sensor_osd/blue_out_4_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>453</td>
+<td>u_camera_display/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/glyph_y_b_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>36</td>
+<td>u_camera_display/u_sensor_osd/glyph_y_b_0_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n1877_s8/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n1877_s8/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s110/I0</td>
+</tr>
+<tr>
+<td>2.630</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s110/F</td>
+</tr>
+<tr>
+<td>2.968</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s108/I0</td>
+</tr>
+<tr>
+<td>3.441</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s108/F</td>
+</tr>
+<tr>
+<td>3.779</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s91/I3</td>
+</tr>
+<tr>
+<td>4.015</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s91/F</td>
+</tr>
+<tr>
+<td>4.353</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s49/I2</td>
+</tr>
+<tr>
+<td>4.768</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s49/F</td>
+</tr>
+<tr>
+<td>5.105</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s21/I3</td>
+</tr>
+<tr>
+<td>5.341</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s21/F</td>
+</tr>
+<tr>
+<td>5.679</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s10/I2</td>
+</tr>
+<tr>
+<td>6.094</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s10/F</td>
+</tr>
+<tr>
+<td>6.432</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s6/I0</td>
+</tr>
+<tr>
+<td>6.905</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s6/F</td>
+</tr>
+<tr>
+<td>7.243</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s3/I3</td>
+</tr>
+<tr>
+<td>7.479</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n2235_s3/F</td>
+</tr>
+<tr>
+<td>7.816</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s2/I0</td>
+</tr>
+<tr>
+<td>8.290</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>10</td>
+<td>u_camera_display/u_sensor_osd/n2235_s2/F</td>
+</tr>
+<tr>
+<td>8.628</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2229_s2/I3</td>
+</tr>
+<tr>
+<td>8.864</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_camera_display/u_sensor_osd/n2229_s2/F</td>
+</tr>
+<tr>
+<td>9.201</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2237_s1/I2</td>
+</tr>
+<tr>
+<td>9.616</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2237_s1/F</td>
+</tr>
+<tr>
+<td>9.954</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/blue_out_4_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.333</td>
+<td>13.333</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.333</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.660</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>453</td>
+<td>u_camera_display/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>13.997</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/blue_out_4_s0/CLK</td>
+</tr>
+<tr>
+<td>13.940</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/blue_out_4_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.333</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>13</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 4.558, 49.068%; route: 4.388, 47.227%; tC2Q: 0.344, 3.705%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp15</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>3.986</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>9.954</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>13.940</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_camera_display/u_sensor_osd/glyph_y_b_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_camera_display/u_sensor_osd/blue_out_5_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>453</td>
+<td>u_camera_display/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/glyph_y_b_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>36</td>
+<td>u_camera_display/u_sensor_osd/glyph_y_b_0_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n1877_s8/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n1877_s8/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s110/I0</td>
+</tr>
+<tr>
+<td>2.630</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s110/F</td>
+</tr>
+<tr>
+<td>2.968</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s108/I0</td>
+</tr>
+<tr>
+<td>3.441</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s108/F</td>
+</tr>
+<tr>
+<td>3.779</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s91/I3</td>
+</tr>
+<tr>
+<td>4.015</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s91/F</td>
+</tr>
+<tr>
+<td>4.353</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s49/I2</td>
+</tr>
+<tr>
+<td>4.768</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s49/F</td>
+</tr>
+<tr>
+<td>5.105</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s21/I3</td>
+</tr>
+<tr>
+<td>5.341</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s21/F</td>
+</tr>
+<tr>
+<td>5.679</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s10/I2</td>
+</tr>
+<tr>
+<td>6.094</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s10/F</td>
+</tr>
+<tr>
+<td>6.432</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s6/I0</td>
+</tr>
+<tr>
+<td>6.905</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s6/F</td>
+</tr>
+<tr>
+<td>7.243</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s3/I3</td>
+</tr>
+<tr>
+<td>7.479</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n2235_s3/F</td>
+</tr>
+<tr>
+<td>7.816</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s2/I0</td>
+</tr>
+<tr>
+<td>8.290</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>10</td>
+<td>u_camera_display/u_sensor_osd/n2235_s2/F</td>
+</tr>
+<tr>
+<td>8.628</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2236_s2/I3</td>
+</tr>
+<tr>
+<td>8.864</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n2236_s2/F</td>
+</tr>
+<tr>
+<td>9.201</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2236_s1/I2</td>
+</tr>
+<tr>
+<td>9.616</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2236_s1/F</td>
+</tr>
+<tr>
+<td>9.954</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/blue_out_5_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.333</td>
+<td>13.333</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.333</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.660</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>453</td>
+<td>u_camera_display/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>13.997</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/blue_out_5_s0/CLK</td>
+</tr>
+<tr>
+<td>13.940</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/blue_out_5_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.333</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>13</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 4.558, 49.068%; route: 4.388, 47.227%; tC2Q: 0.344, 3.705%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp16</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>3.986</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>9.954</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>13.940</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_camera_display/u_sensor_osd/glyph_y_b_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_camera_display/u_sensor_osd/blue_out_7_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>453</td>
+<td>u_camera_display/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/glyph_y_b_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>36</td>
+<td>u_camera_display/u_sensor_osd/glyph_y_b_0_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n1877_s8/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n1877_s8/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s110/I0</td>
+</tr>
+<tr>
+<td>2.630</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s110/F</td>
+</tr>
+<tr>
+<td>2.968</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s108/I0</td>
+</tr>
+<tr>
+<td>3.441</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s108/F</td>
+</tr>
+<tr>
+<td>3.779</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s91/I3</td>
+</tr>
+<tr>
+<td>4.015</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s91/F</td>
+</tr>
+<tr>
+<td>4.353</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s49/I2</td>
+</tr>
+<tr>
+<td>4.768</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s49/F</td>
+</tr>
+<tr>
+<td>5.105</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s21/I3</td>
+</tr>
+<tr>
+<td>5.341</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s21/F</td>
+</tr>
+<tr>
+<td>5.679</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s10/I2</td>
+</tr>
+<tr>
+<td>6.094</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s10/F</td>
+</tr>
+<tr>
+<td>6.432</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s6/I0</td>
+</tr>
+<tr>
+<td>6.905</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s6/F</td>
+</tr>
+<tr>
+<td>7.243</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s3/I3</td>
+</tr>
+<tr>
+<td>7.479</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n2235_s3/F</td>
+</tr>
+<tr>
+<td>7.816</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s2/I0</td>
+</tr>
+<tr>
+<td>8.290</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>10</td>
+<td>u_camera_display/u_sensor_osd/n2235_s2/F</td>
+</tr>
+<tr>
+<td>8.628</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2229_s2/I3</td>
+</tr>
+<tr>
+<td>8.864</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_camera_display/u_sensor_osd/n2229_s2/F</td>
+</tr>
+<tr>
+<td>9.201</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2234_s1/I2</td>
+</tr>
+<tr>
+<td>9.616</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2234_s1/F</td>
+</tr>
+<tr>
+<td>9.954</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/blue_out_7_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.333</td>
+<td>13.333</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.333</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.660</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>453</td>
+<td>u_camera_display/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>13.997</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/blue_out_7_s0/CLK</td>
+</tr>
+<tr>
+<td>13.940</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/blue_out_7_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.333</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>13</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 4.558, 49.068%; route: 4.388, 47.227%; tC2Q: 0.344, 3.705%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp17</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>3.986</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>9.954</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>13.940</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_camera_display/u_sensor_osd/glyph_y_b_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_camera_display/u_sensor_osd/green_out_4_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>453</td>
+<td>u_camera_display/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/glyph_y_b_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>36</td>
+<td>u_camera_display/u_sensor_osd/glyph_y_b_0_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n1877_s8/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n1877_s8/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s110/I0</td>
+</tr>
+<tr>
+<td>2.630</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s110/F</td>
+</tr>
+<tr>
+<td>2.968</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s108/I0</td>
+</tr>
+<tr>
+<td>3.441</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s108/F</td>
+</tr>
+<tr>
+<td>3.779</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s91/I3</td>
+</tr>
+<tr>
+<td>4.015</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s91/F</td>
+</tr>
+<tr>
+<td>4.353</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s49/I2</td>
+</tr>
+<tr>
+<td>4.768</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s49/F</td>
+</tr>
+<tr>
+<td>5.105</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s21/I3</td>
+</tr>
+<tr>
+<td>5.341</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s21/F</td>
+</tr>
+<tr>
+<td>5.679</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s10/I2</td>
+</tr>
+<tr>
+<td>6.094</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s10/F</td>
+</tr>
+<tr>
+<td>6.432</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s6/I0</td>
+</tr>
+<tr>
+<td>6.905</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s6/F</td>
+</tr>
+<tr>
+<td>7.243</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s3/I3</td>
+</tr>
+<tr>
+<td>7.479</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n2235_s3/F</td>
+</tr>
+<tr>
+<td>7.816</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2235_s2/I0</td>
+</tr>
+<tr>
+<td>8.290</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>10</td>
+<td>u_camera_display/u_sensor_osd/n2235_s2/F</td>
+</tr>
+<tr>
+<td>8.628</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2229_s2/I3</td>
+</tr>
+<tr>
+<td>8.864</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_camera_display/u_sensor_osd/n2229_s2/F</td>
+</tr>
+<tr>
+<td>9.201</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2229_s0/I2</td>
+</tr>
+<tr>
+<td>9.616</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n2229_s0/F</td>
+</tr>
+<tr>
+<td>9.954</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/green_out_4_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.333</td>
+<td>13.333</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.333</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.660</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>453</td>
+<td>u_camera_display/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>13.997</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/green_out_4_s0/CLK</td>
+</tr>
+<tr>
+<td>13.940</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/green_out_4_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.333</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>13</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 4.558, 49.068%; route: 4.388, 47.227%; tC2Q: 0.344, 3.705%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp18</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>4.094</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>9.846</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>13.940</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_camera_display/disp_driver/hcount_r_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_camera_display/u_sensor_osd/text_col_a_1_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>0.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>453</td>
+<td>u_camera_display/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>0.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/disp_driver/hcount_r_0_s0/CLK</td>
+</tr>
+<tr>
+<td>1.008</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>14</td>
+<td>u_camera_display/disp_driver/hcount_r_0_s0/Q</td>
+</tr>
+<tr>
+<td>1.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/disp_driver/n79_s3/I0</td>
+</tr>
+<tr>
+<td>1.819</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/disp_driver/n79_s3/F</td>
+</tr>
+<tr>
+<td>2.157</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n904_s21/I3</td>
+</tr>
+<tr>
+<td>2.393</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>u_camera_display/u_sensor_osd/n904_s21/F</td>
+</tr>
+<tr>
+<td>2.730</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n742_s14/I2</td>
+</tr>
+<tr>
+<td>3.145</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n742_s14/F</td>
+</tr>
+<tr>
+<td>3.483</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n742_s8/I0</td>
+</tr>
+<tr>
+<td>3.957</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>u_camera_display/u_sensor_osd/n742_s8/F</td>
+</tr>
+<tr>
+<td>4.294</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n978_s7/I0</td>
+</tr>
+<tr>
+<td>4.768</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>10</td>
+<td>u_camera_display/u_sensor_osd/n978_s7/F</td>
+</tr>
+<tr>
+<td>5.105</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n902_s21/I0</td>
+</tr>
+<tr>
+<td>5.579</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_camera_display/u_sensor_osd/n902_s21/F</td>
+</tr>
+<tr>
+<td>5.916</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n902_s23/I1</td>
+</tr>
+<tr>
+<td>6.381</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>u_camera_display/u_sensor_osd/n902_s23/F</td>
+</tr>
+<tr>
+<td>6.719</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s21/I2</td>
+</tr>
+<tr>
+<td>7.134</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s21/F</td>
+</tr>
+<tr>
+<td>7.471</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s16/I2</td>
+</tr>
+<tr>
+<td>7.886</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s16/F</td>
+</tr>
+<tr>
+<td>8.224</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n903_s15/I0</td>
+</tr>
+<tr>
+<td>8.697</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_camera_display/u_sensor_osd/n903_s15/F</td>
+</tr>
+<tr>
+<td>9.035</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/n904_s13/I0</td>
+</tr>
+<tr>
+<td>9.509</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_camera_display/u_sensor_osd/n904_s13/F</td>
+</tr>
+<tr>
+<td>9.846</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/text_col_a_1_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>13.333</td>
+<td>13.333</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>13.333</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.660</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>453</td>
+<td>u_camera_display/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>13.997</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/text_col_a_1_s0/CLK</td>
+</tr>
+<tr>
+<td>13.940</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_camera_display/u_sensor_osd/text_col_a_1_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>13.333</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>12</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 4.788, 52.144%; route: 4.050, 44.107%; tC2Q: 0.344, 3.749%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp19</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>4.193</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>16.378</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>20.571</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_dll</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_0_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>15.000</td>
+<td>15.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>15.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0.default_gen_clk</td>
+</tr>
+<tr>
+<td>15.337</td>
+<td>0.337</td>
+<td>tCL</td>
+<td>RR</td>
+<td>64</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0</td>
+</tr>
+<tr>
+<td>15.675</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>8</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_dll/CLKIN</td>
+</tr>
+<tr>
+<td>16.040</td>
+<td>0.365</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_dll/STEP[0]</td>
+</tr>
+<tr>
+<td>16.378</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_0_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>20.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>20.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>3679</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>20.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_0_s0/CLK</td>
+</tr>
+<tr>
+<td>20.629</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_0_s0</td>
+</tr>
+<tr>
+<td>20.571</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_0_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.326</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>5.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 100.000%; route: 0.000, 0.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 0.365, 35.122%; route: 0.337, 32.439%; tC2Q: 0.337, 32.439%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 100.000%; route: 0.000, 0.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp20</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>4.193</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>16.378</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>20.571</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_dll</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_1_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>15.000</td>
+<td>15.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>15.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0.default_gen_clk</td>
+</tr>
+<tr>
+<td>15.337</td>
+<td>0.337</td>
+<td>tCL</td>
+<td>RR</td>
+<td>64</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0</td>
+</tr>
+<tr>
+<td>15.675</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>8</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_dll/CLKIN</td>
+</tr>
+<tr>
+<td>16.040</td>
+<td>0.365</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_dll/STEP[1]</td>
+</tr>
+<tr>
+<td>16.378</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_1_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>20.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>20.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>3679</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>20.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_1_s0/CLK</td>
+</tr>
+<tr>
+<td>20.629</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_1_s0</td>
+</tr>
+<tr>
+<td>20.571</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_1_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.326</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>5.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 100.000%; route: 0.000, 0.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 0.365, 35.122%; route: 0.337, 32.439%; tC2Q: 0.337, 32.439%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 100.000%; route: 0.000, 0.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp21</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>4.193</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>16.378</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>20.571</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_dll</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_2_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>15.000</td>
+<td>15.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>15.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0.default_gen_clk</td>
+</tr>
+<tr>
+<td>15.337</td>
+<td>0.337</td>
+<td>tCL</td>
+<td>RR</td>
+<td>64</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0</td>
+</tr>
+<tr>
+<td>15.675</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>8</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_dll/CLKIN</td>
+</tr>
+<tr>
+<td>16.040</td>
+<td>0.365</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_dll/STEP[2]</td>
+</tr>
+<tr>
+<td>16.378</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_2_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>20.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>20.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>3679</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>20.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_2_s0/CLK</td>
+</tr>
+<tr>
+<td>20.629</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_2_s0</td>
+</tr>
+<tr>
+<td>20.571</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_2_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.326</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>5.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 100.000%; route: 0.000, 0.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 0.365, 35.122%; route: 0.337, 32.439%; tC2Q: 0.337, 32.439%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 100.000%; route: 0.000, 0.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp22</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>4.193</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>16.378</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>20.571</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_dll</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_3_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>15.000</td>
+<td>15.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>15.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0.default_gen_clk</td>
+</tr>
+<tr>
+<td>15.337</td>
+<td>0.337</td>
+<td>tCL</td>
+<td>RR</td>
+<td>64</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0</td>
+</tr>
+<tr>
+<td>15.675</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>8</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_dll/CLKIN</td>
+</tr>
+<tr>
+<td>16.040</td>
+<td>0.365</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_dll/STEP[3]</td>
+</tr>
+<tr>
+<td>16.378</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_3_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>20.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>20.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>3679</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>20.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_3_s0/CLK</td>
+</tr>
+<tr>
+<td>20.629</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_3_s0</td>
+</tr>
+<tr>
+<td>20.571</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_3_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.326</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>5.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 100.000%; route: 0.000, 0.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 0.365, 35.122%; route: 0.337, 32.439%; tC2Q: 0.337, 32.439%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 100.000%; route: 0.000, 0.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp23</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>4.193</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>16.378</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>20.571</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_dll</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_4_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>15.000</td>
+<td>15.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>15.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0.default_gen_clk</td>
+</tr>
+<tr>
+<td>15.337</td>
+<td>0.337</td>
+<td>tCL</td>
+<td>RR</td>
+<td>64</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0</td>
+</tr>
+<tr>
+<td>15.675</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>8</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_dll/CLKIN</td>
+</tr>
+<tr>
+<td>16.040</td>
+<td>0.365</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_dll/STEP[4]</td>
+</tr>
+<tr>
+<td>16.378</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_4_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>20.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>20.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>3679</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>20.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_4_s0/CLK</td>
+</tr>
+<tr>
+<td>20.629</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_4_s0</td>
+</tr>
+<tr>
+<td>20.571</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_4_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.326</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>5.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 100.000%; route: 0.000, 0.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 0.365, 35.122%; route: 0.337, 32.439%; tC2Q: 0.337, 32.439%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 100.000%; route: 0.000, 0.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp24</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>4.193</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>16.378</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>20.571</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_dll</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_5_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>15.000</td>
+<td>15.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>15.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0.default_gen_clk</td>
+</tr>
+<tr>
+<td>15.337</td>
+<td>0.337</td>
+<td>tCL</td>
+<td>RR</td>
+<td>64</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0</td>
+</tr>
+<tr>
+<td>15.675</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>8</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_dll/CLKIN</td>
+</tr>
+<tr>
+<td>16.040</td>
+<td>0.365</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_dll/STEP[5]</td>
+</tr>
+<tr>
+<td>16.378</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_5_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>20.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>20.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>3679</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>20.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_5_s0/CLK</td>
+</tr>
+<tr>
+<td>20.629</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_5_s0</td>
+</tr>
+<tr>
+<td>20.571</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_5_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.326</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>5.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 100.000%; route: 0.000, 0.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 0.365, 35.122%; route: 0.337, 32.439%; tC2Q: 0.337, 32.439%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 100.000%; route: 0.000, 0.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp25</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>4.193</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>16.378</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>20.571</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_dll</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_6_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>15.000</td>
+<td>15.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>15.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0.default_gen_clk</td>
+</tr>
+<tr>
+<td>15.337</td>
+<td>0.337</td>
+<td>tCL</td>
+<td>RR</td>
+<td>64</td>
+<td>u_camera_display/Gowin_PLL/pll_inst/CLKOUT0</td>
+</tr>
+<tr>
+<td>15.675</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>8</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_dll/CLKIN</td>
+</tr>
+<tr>
+<td>16.040</td>
+<td>0.365</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/u_dll/STEP[6]</td>
+</tr>
+<tr>
+<td>16.378</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_6_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>20.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>20.326</td>
+<td>0.326</td>
+<td>tCL</td>
+<td>RR</td>
+<td>3679</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>20.664</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_6_s0/CLK</td>
+</tr>
+<tr>
+<td>20.629</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_6_s0</td>
+</tr>
+<tr>
+<td>20.571</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/dll_step_base_6_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.326</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>5.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 100.000%; route: 0.000, 0.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 0.365, 35.122%; route: 0.337, 32.439%; tC2Q: 0.337, 32.439%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 100.000%; route: 0.000, 0.000%</td></tr>
+</table>
+<br/>
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>

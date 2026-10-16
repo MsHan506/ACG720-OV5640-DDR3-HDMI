@@ -1,0 +1,35 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\camera\ov5640_camera_diag\src\camera_diag_top.v'
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\pll_60b\camera_pll_60b.v'
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\camera_init\camera_init.v'
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\camera_init\i2c_control\i2c_bit_shift.v'
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\camera_init\i2c_control\i2c_control.v'
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\camera_init\ov5640_init_table_rgb.v'
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\camera_init\ov5640_init_table_jpeg.v'
+Compiling module 'camera_diag_top'("C:\chatgpt\fpga\b_perception\camera\ov5640_camera_diag\src\camera_diag_top.v":1)
+Compiling module 'camera_pll'("C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\pll_60b\camera_pll_60b.v":2)
+Compiling module 'camera_init'("C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\camera_init\camera_init.v":18)
+Compiling module 'ov5640_init_table_rgb(IMAGE_WIDTH=640,IMAGE_HEIGHT=480,IMAGE_FLIP_EN=0,IMAGE_MIRROR_EN=0)'("C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\camera_init\ov5640_init_table_rgb.v":18)
+Compiling module 'i2c_control'("C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\camera_init\i2c_control\i2c_control.v":18)
+Compiling module 'i2c_bit_shift'("C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\camera_init\i2c_control\i2c_bit_shift.v":18)
+NOTE  (EX0101) : Current top module is "camera_diag_top"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "C:\chatgpt\fpga\b_perception\camera\ov5640_camera_diag\impl\gwsynthesis\camera_diag_60b.vg" completed
+[100%] Generate report file "C:\chatgpt\fpga\b_perception\camera\ov5640_camera_diag\impl\gwsynthesis\camera_diag_60b_syn.rpt.html" completed
+GowinSynthesis finish

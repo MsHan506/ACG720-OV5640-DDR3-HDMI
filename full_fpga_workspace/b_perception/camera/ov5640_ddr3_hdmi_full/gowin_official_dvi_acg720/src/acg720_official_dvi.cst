@@ -1,0 +1,25 @@
+// ACG-720-GW5AT60 board adaptation of the Gowin official DVI TX reference.
+IO_LOC "I_clk" Y18;
+IO_PORT "I_clk" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "I_rst_n" F15;
+IO_PORT "I_rst_n" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+
+IO_LOC "O_led[3]" K21;
+IO_PORT "O_led[3]" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "O_led[2]" L21;
+IO_PORT "O_led[2]" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "O_led[1]" N22;
+IO_PORT "O_led[1]" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "O_led[0]" M22;
+IO_PORT "O_led[0]" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+// ACG-720 HDMI1.  Pair notation follows Gowin's official reference CST.
+IO_LOC "O_tmds_data_p[2]" M3,M2;
+IO_LOC "O_tmds_data_p[1]" L5,L4;
+IO_LOC "O_tmds_data_p[0]" L3,K3;
+IO_LOC "O_tmds_clk_p" K4,J4;
+
+IO_PORT "O_tmds_data_p[2]" IO_TYPE=LVDS25;
+IO_PORT "O_tmds_data_p[1]" IO_TYPE=LVDS25;
+IO_PORT "O_tmds_data_p[0]" IO_TYPE=LVDS25;
+IO_PORT "O_tmds_clk_p" IO_TYPE=LVDS25;

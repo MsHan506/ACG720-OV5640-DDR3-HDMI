@@ -1,0 +1,34 @@
+WARN  (CM1011) : The input VCC is illegal,  VCC '0.95' is set to default.
+Reading netlist file: "C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\impl\gwsynthesis\b_full_rk3588_complete_candidate.vg"
+Parsing netlist file "C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\impl\gwsynthesis\b_full_rk3588_complete_candidate.vg" completed
+Processing netlist completed
+Reading constraint file: "C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\src\ov5640_ddr3_hdmi_60b_dviip.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+WARN  (TA1132) :  'camera_pclk' was determined to be a clock but was not created.
+WARN  (TA1132) :  'u_camera_display/ddr3_ctrl_2port/DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk' was determined to be a clock but was not created.
+WARN  (TA1132) :  'u_camera_display/u_clkdiv/CLKOUT.default_gen_clk' was determined to be a clock but was not created.
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'camera_pclk_d' by the specified constraint. And then it may lead to the excessive delay or skew
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\impl\pnr\b_full_rk3588_complete_candidate.power.html" completed
+Generate file "C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\impl\pnr\b_full_rk3588_complete_candidate.pin.html" completed
+Generate file "C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\impl\pnr\b_full_rk3588_complete_candidate.rpt.html" completed
+Generate file "C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\impl\pnr\b_full_rk3588_complete_candidate.rpt.txt" completed
+Generate file "C:\chatgpt\fpga\b_perception\camera\ov5640_ddr3_hdmi_full\impl\pnr\b_full_rk3588_complete_candidate.tr.html" completed
+Thu Oct  8 22:47:26 2026
+

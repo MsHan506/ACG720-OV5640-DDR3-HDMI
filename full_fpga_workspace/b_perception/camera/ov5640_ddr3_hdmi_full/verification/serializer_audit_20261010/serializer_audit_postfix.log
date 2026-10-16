@@ -1,0 +1,40 @@
+# vsim -c -voptargs="+acc" work.tb_serializer_audit -l serializer_audit_postfix.log -do "run -all; quit -f" 
+# Start time: 22:12:35 on Oct 10,2026
+# Loading sv_std.std
+# Loading work.tb_serializer_audit
+# Loading work.GSR
+# Loading work.CLKDIV
+# Loading work.serializer
+# Loading work.OSER10
+# run -all
+# TRIAL 0 complete_words=284
+# TRIAL 1 complete_words=284
+# TRIAL 2 complete_words=285
+# TRIAL 3 complete_words=284
+# TRIAL 4 complete_words=284
+# TRIAL 5 complete_words=284
+# TRIAL 6 complete_words=285
+# TRIAL 7 complete_words=284
+# TRIAL 8 complete_words=284
+# TRIAL 9 complete_words=284
+# TRIAL 10 complete_words=284
+# TRIAL 11 complete_words=284
+# TRIAL 12 complete_words=285
+# TRIAL 13 complete_words=284
+# TRIAL 14 complete_words=284
+# TRIAL 15 complete_words=285
+# TRIAL 16 complete_words=285
+# TRIAL 17 complete_words=285
+# TRIAL 18 complete_words=285
+# TRIAL 19 complete_words=284
+# TRIAL 20 complete_words=284
+# TRIAL 21 complete_words=284
+# TRIAL 22 complete_words=284
+# TRIAL 23 complete_words=284
+# TRIAL 24 complete_words=285
+# RESULT trials=25 complete_3lane_words=7108 failures=0 first_latency=3
+# MODEL_CLOCK period_ps=13470 high_ps=8082 low_ps=5388 FCLK_period_ps=2694
+# ** Note: $finish    : tb_serializer_audit.sv(164)
+#    Time: 100749 ns  Iteration: 0  Instance: /tb_serializer_audit
+# End time: 22:12:36 on Oct 10,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

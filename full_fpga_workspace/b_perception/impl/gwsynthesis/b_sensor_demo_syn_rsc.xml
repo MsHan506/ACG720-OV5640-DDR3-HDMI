@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="b_sensor_demo_top" Register="2" Lut="94" T_Register="968(2)" T_Alu="402(0)" T_Lut="1848(94)" T_MULTALU27X18="6(0)">
+ <SubModule name="u_perception_hub" Register="32" Alu="30" Lut="64" T_Register="553(32)" T_Alu="356(30)" T_Lut="738(64)" T_MULTALU27X18="6(0)">
+  <SubModule name="u_tof_uart" Register="50" Lut="89" T_Register="50(50)" T_Lut="89(89)"/>
+  <SubModule name="u_tof_parser" Register="79" Alu="29" Lut="46" T_Register="79(79)" T_Alu="29(29)" T_Lut="46(46)"/>
+  <SubModule name="u_tof_gate" Register="36" Alu="86" Lut="33" T_Register="36(36)" T_Alu="86(86)" T_Lut="33(33)"/>
+  <SubModule name="u_tof_average" Register="65" Alu="79" Lut="138" T_Register="65(65)" T_Alu="79(79)" T_Lut="138(138)"/>
+  <SubModule name="u_imu_uart" Register="50" Lut="90" T_Register="50(50)" T_Lut="90(90)"/>
+  <SubModule name="u_imu_uart_alt" Register="47" Lut="87" T_Register="47(47)" T_Lut="87(87)"/>
+  <SubModule name="u_imu_parser" Register="72" Alu="16" Lut="39" MULTALU27X18="3" T_Register="72(72)" T_Alu="16(16)" T_Lut="39(39)" T_MULTALU27X18="3(3)"/>
+  <SubModule name="u_imu_parser_alt" Register="72" Alu="16" Lut="40" MULTALU27X18="3" T_Register="72(72)" T_Alu="16(16)" T_Lut="40(40)" T_MULTALU27X18="3(3)"/>
+  <SubModule name="u_roll_filter" Register="18" Alu="33" Lut="16" T_Register="18(18)" T_Alu="33(33)" T_Lut="16(16)"/>
+  <SubModule name="u_pitch_filter" Register="16" Alu="33" Lut="16" T_Register="16(16)" T_Alu="33(33)" T_Lut="16(16)"/>
+  <SubModule name="u_yaw_filter" Register="16" Alu="34" Lut="80" T_Register="16(16)" T_Alu="34(34)" T_Lut="80(80)"/>
+ </SubModule>
+ <SubModule name="u_telemetry" Register="366" Alu="46" Lut="936" T_Register="413(366)" T_Alu="46(46)" T_Lut="1016(936)">
+  <SubModule name="u_uart_tx" Register="47" Lut="80" T_Register="47(47)" T_Lut="80(80)"/>
+ </SubModule>
+</Module>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="camera_diag_top" Register="59" Alu="49" Lut="8" T_Register="153(59)" T_Alu="49(49)" T_Lut="251(8)" T_Bsram="1(0)">
+ <SubModule name="u_camera_pll"/>
+ <SubModule name="u_camera_init" Register="34" Lut="85" T_Register="94(34)" T_Lut="243(85)" T_Bsram="1(0)">
+  <SubModule name="ov5640_init_table_rgb_inst" Bsram="1" T_Bsram="1(1)"/>
+  <SubModule name="i2c_control" Register="39" Lut="82" T_Register="60(39)" T_Lut="158(82)">
+   <SubModule name="i2c_bit_shift" Register="21" Lut="76" T_Register="21(21)" T_Lut="76(76)"/>
+  </SubModule>
+ </SubModule>
+</Module>

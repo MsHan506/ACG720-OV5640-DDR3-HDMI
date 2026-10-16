@@ -1,0 +1,7 @@
+// ACG720-GW5AT60: onboard 50 MHz clock and LED0.
+IO_LOC "clk_50m" Y18;
+IO_PORT "clk_50m" IO_TYPE=LVCMOS33 PULL_MODE=NONE;
+
+// M22/N22 are dedicated SSPI pins on GW5AT-60B, so use LED2 instead.
+IO_LOC "led2" L21;
+IO_PORT "led2" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;

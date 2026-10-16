@@ -1,0 +1,45 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\rtl\common\uart_rx.v'
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\rtl\common\uart_tx_v3.v'
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\rtl\tof\tfmini_s_parser.v'
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\rtl\imu\wt901_parser.v'
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\rtl\filter\tof_outlier_gate.v'
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\rtl\filter\moving_average4_unsigned.v'
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\rtl\filter\signed_iir_filter.v'
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\rtl\filter\angle_iir_filter.v'
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\rtl\integration\perception_hub.v'
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\rtl\integration\sensor_telemetry_tx_v3.v'
+Analyzing Verilog file 'C:\chatgpt\fpga\b_perception\rtl\integration\b_sensor_demo_top.v'
+Compiling module 'b_sensor_demo_top'("C:\chatgpt\fpga\b_perception\rtl\integration\b_sensor_demo_top.v":3)
+Compiling module 'perception_hub'("C:\chatgpt\fpga\b_perception\rtl\integration\perception_hub.v":3)
+Compiling module 'uart_rx'("C:\chatgpt\fpga\b_perception\rtl\common\uart_rx.v":3)
+Compiling module 'tfmini_s_parser'("C:\chatgpt\fpga\b_perception\rtl\tof\tfmini_s_parser.v":3)
+Compiling module 'tof_outlier_gate(MAX_STEP_MM=16'b0000010111011100)'("C:\chatgpt\fpga\b_perception\rtl\filter\tof_outlier_gate.v":3)
+Compiling module 'moving_average4_unsigned'("C:\chatgpt\fpga\b_perception\rtl\filter\moving_average4_unsigned.v":3)
+Compiling module 'uart_rx(BAUD_RATE=9600)'("C:\chatgpt\fpga\b_perception\rtl\common\uart_rx.v":3)
+Compiling module 'wt901_parser'("C:\chatgpt\fpga\b_perception\rtl\imu\wt901_parser.v":3)
+Compiling module 'signed_iir_filter'("C:\chatgpt\fpga\b_perception\rtl\filter\signed_iir_filter.v":3)
+Compiling module 'angle_iir_filter'("C:\chatgpt\fpga\b_perception\rtl\filter\angle_iir_filter.v":3)
+Compiling module 'sensor_telemetry_tx_v3'("C:\chatgpt\fpga\b_perception\rtl\integration\sensor_telemetry_tx_v3.v":6)
+Compiling module 'uart_tx_v3'("C:\chatgpt\fpga\b_perception\rtl\common\uart_tx_v3.v":5)
+NOTE  (EX0101) : Current top module is "b_sensor_demo_top"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "C:\chatgpt\fpga\b_perception\impl\gwsynthesis\b_sensor_demo.vg" completed
+[100%] Generate report file "C:\chatgpt\fpga\b_perception\impl\gwsynthesis\b_sensor_demo_syn.rpt.html" completed
+GowinSynthesis finish

@@ -1,0 +1,14 @@
+# vsim -c work.tb_full_video_alignment -l full_video_alignment.log -do "run -all; quit -f" 
+# Start time: 22:46:49 on Oct 13,2026
+# Loading sv_std.std
+# Loading work.tb_full_video_alignment
+# Loading work.disp_driver
+# Loading work.sensor_osd_overlay
+# Loading work.bin16_to_bcd5_seq
+# Loading work.target_box_overlay
+# run -all
+# RESULT checked=3300 failures=0
+# ** Note: $finish    : tb_full_video_alignment.sv(86)
+#    Time: 44545411 ps  Iteration: 0  Instance: /tb_full_video_alignment
+# End time: 22:46:50 on Oct 13,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

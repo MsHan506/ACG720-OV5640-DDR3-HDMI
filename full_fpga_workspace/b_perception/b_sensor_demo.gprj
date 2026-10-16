@@ -1,0 +1,22 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5AT-60B" pn="GW5AT-LV60PG484AC1/I0">gw5at60b-002</Device>
+    <FileList>
+        <File path="rtl/common/uart_rx.v" type="file.verilog" enable="1"/>
+        <File path="rtl/common/uart_tx_v3.v" type="file.verilog" enable="1"/>
+        <File path="rtl/tof/tfmini_s_parser.v" type="file.verilog" enable="1"/>
+        <File path="rtl/imu/wt901_parser.v" type="file.verilog" enable="1"/>
+        <File path="rtl/filter/tof_outlier_gate.v" type="file.verilog" enable="1"/>
+        <File path="rtl/filter/moving_average4_unsigned.v" type="file.verilog" enable="1"/>
+        <File path="rtl/filter/signed_iir_filter.v" type="file.verilog" enable="1"/>
+        <File path="rtl/filter/angle_iir_filter.v" type="file.verilog" enable="1"/>
+        <File path="rtl/integration/perception_hub.v" type="file.verilog" enable="1"/>
+        <File path="rtl/integration/sensor_telemetry_tx_v3.v" type="file.verilog" enable="1"/>
+        <File path="rtl/integration/b_sensor_demo_top.v" type="file.verilog" enable="1"/>
+        <File path="constraints/b_sensor_demo.cst" type="file.cst" enable="1"/>
+        <File path="constraints/b_sensor_demo.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>

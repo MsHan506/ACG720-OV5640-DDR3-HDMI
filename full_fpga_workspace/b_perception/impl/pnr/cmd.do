@@ -1,0 +1,22 @@
+-d C:\chatgpt\fpga\b_perception\impl\gwsynthesis\b_sensor_demo.vg
+-p GW5AT-60B-PBGA484A-1
+-pn GW5AT-LV60PG484AC1/I0
+-cst C:\chatgpt\fpga\b_perception\constraints\b_sensor_demo.cst
+-cfg C:\chatgpt\fpga\b_perception\impl\pnr\device.cfg
+-sdc C:\chatgpt\fpga\b_perception\constraints\b_sensor_demo.sdc
+-bit
+-tr
+-ph
+-timing
+-ireg_not_in_iob
+-oreg_not_in_iob
+-ioreg_not_in_iob
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-place_option 3
+-route_option 2
+-clock_route_order 0
+-correct_hold 1
+-route_maxfan 23
+-global_freq 100.000
+-enable_dsrm 0

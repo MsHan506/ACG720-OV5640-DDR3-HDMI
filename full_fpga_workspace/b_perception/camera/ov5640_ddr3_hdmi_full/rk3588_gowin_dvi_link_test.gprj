@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5AT-60B" pn="GW5AT-LV60PG484AC1/I0">gw5at60b-002</Device>
+    <FileList>
+        <File path="src/rk3588_gowin_dvi_link_test_top.v" type="file.verilog" enable="1"/>
+        <File path="src/pll_60b/camera_pll_60b.v" type="file.verilog" enable="1"/>
+        <File path="src/dvi_tx/dvi_tx.v" type="file.verilog" enable="1"/>
+        <File path="src/rk3588_hdmi_link_test.cst" type="file.cst" enable="1"/>
+        <File path="src/rk3588_gowin_dvi_link_test.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>
